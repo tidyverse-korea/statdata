@@ -28,3 +28,21 @@ NULL
 #' @keywords datasets
 "shadow_length"
 
+#' "sea_pollution : 초등과학 3-2"
+#'
+#' 초등과학 3-2 교과서에 수록된 우리나라 해역 오염실태자료 데이터다.
+#'
+#'
+#' @format 변수 3개와 16행을 갖는 티블 데이터프레임:
+#' @aliases "해역 오염실태자료"
+#' @docType data
+#' @return \item{sea_pollution}{데이터프레임}
+#' \describe{
+#'   \item{\code{연도}}{double 1993년부터 2008년까지 해역 오염실태 조사 연도}
+#'   \item{\code{건수}}{double 해역 오염 건수}
+#'   \item{\code{유출량}}{double 해역 오염 유출량, 단위: kl}
+#'}
+#' @details  초등과학 3-2 교과서에 수록된 1993년부터 2008년까지 우리나라 해역 오염실태자료 데이터다.
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"sea_pollution"
