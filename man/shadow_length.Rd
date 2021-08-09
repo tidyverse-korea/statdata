@@ -3,9 +3,8 @@
 \docType{data}
 \name{shadow_length}
 \alias{shadow_length}
-\alias{그림자}
-\alias{길이}
-\title{"shadow_length : 초등과학 3-2"}
+\alias{그림자길이}
+\title{shadow_length : 초등과학 3-2}
 \format{
 변수 2개와 7행을 갖는 티블 데이터프레임:
 }

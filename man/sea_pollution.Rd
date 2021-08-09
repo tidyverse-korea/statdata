@@ -3,9 +3,8 @@
 \docType{data}
 \name{sea_pollution}
 \alias{sea_pollution}
-\alias{"해역}
-\alias{오염실태자료"}
-\title{"sea_pollution : 초등과학 3-2"}
+\alias{해역오염실태자료}
+\title{sea_pollution : 초등과학 3-2}
 \format{
 변수 3개와 16행을 갖는 티블 데이터프레임:
 }

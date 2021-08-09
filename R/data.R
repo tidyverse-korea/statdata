@@ -10,13 +10,13 @@
 #' @aliases statdata datadata-package
 NULL
 
-#' "shadow_length : 초등과학 3-2"
+#' shadow_length : 초등과학 3-2
 #'
 #' 초등과학 3-2에 수록된 태양 각도와 그림자 길이에 대한 데이터다.
 #'
 #'
 #' @format 변수 2개와 7행을 갖는 티블 데이터프레임:
-#' @aliases 그림자 길이
+#' @aliases 그림자길이
 #' @docType data
 #' @return \item{shadow_length}{데이터프레임}
 #' \describe{
@@ -28,13 +28,13 @@ NULL
 #' @keywords datasets
 "shadow_length"
 
-#' "sea_pollution : 초등과학 3-2"
+#' sea_pollution : 초등과학 3-2
 #'
 #' 초등과학 3-2 교과서에 수록된 우리나라 해역 오염실태자료 데이터다.
 #'
 #'
 #' @format 변수 3개와 16행을 갖는 티블 데이터프레임:
-#' @aliases "해역 오염실태자료"
+#' @aliases 해역오염실태자료
 #' @docType data
 #' @return \item{sea_pollution}{데이터프레임}
 #' \describe{
