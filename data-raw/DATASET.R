@@ -17,7 +17,16 @@ sea_pollution_raw <- readr::read_csv("inst/extdata/초등과학3-2우리나라�
 sea_pollution <- sea_pollution_raw %>%
     set_names(c("연도", "건수", "유출량"))
 
+## 초등과학5-2각행성의반지름(141쪽).csv
+
+planet_radius_raw <- readr::read_csv("inst/extdata/초등과학5-2각행성의반지름(141쪽).csv")
+
+planet_radius <- sea_pollution_raw %>%
+    set_names(c("행성이름", "반지름"))
+
 # 2. 데이터셋 팩키지 추가 ------
 
 usethis::use_data(shadow_length, overwrite = TRUE)
 usethis::use_data(sea_pollution, overwrite = TRUE)
+usethis::use_data(planet_radius, overwrite = TRUE)
+

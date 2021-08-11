@@ -46,3 +46,21 @@ NULL
 #' @source \url{http://estat.me/estat/eStat/}
 #' @keywords datasets
 "sea_pollution"
+
+#' planet_radius : 초등과학 5-2
+#'
+#' 초등과학 5-2 교과서에 수록된 지구를 1로 뒀을 때 행성의 반지름 데이터
+#'
+#'
+#' @format 변수 2개와 9행을 갖는 티블 데이터프레임:
+#' @aliases 행성반지름
+#' @docType data
+#' @return \item{planet_radius}{데이터프레임}
+#' \describe{
+#'   \item{\code{행성이름}}{character 태양계 존재하는 행성 이름}
+#'   \item{\code{반지름}}{double 지구를 1로 뒀을 때 행성의 반지름}
+#'}
+#' @details  초등과학 5-2 교과서에 수록된 행성의 크기에 때한 실증 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"planet_radius"
