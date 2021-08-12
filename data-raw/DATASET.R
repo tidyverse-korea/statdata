@@ -3,6 +3,14 @@ library(tidyverse)
 # fs::dir_create("inst/extdata")
 
 # 1. 초중등 교과서 데이터셋 ------
+
+## 025원시_성별.csv
+
+gender_raw <- readr::read_csv("inst/extdata/025원시_성별.csv")
+
+gender <- gender_raw %>%
+    set_names("성별")
+
 ## 초등과학3-2그림자길이(136쪽).csv
 
 shadow_length_raw <- readr::read_csv("inst/extdata/초등과학3-2그림자길이(136쪽).csv")
@@ -21,7 +29,7 @@ sea_pollution <- sea_pollution_raw %>%
 
 planet_radius_raw <- readr::read_csv("inst/extdata/초등과학5-2각행성의반지름(141쪽).csv")
 
-planet_radius <- sea_pollution_raw %>%
+planet_radius <- planet_radius_raw %>%
     set_names(c("행성이름", "반지름"))
 
 # 2. 데이터셋 팩키지 추가 ------
@@ -29,4 +37,5 @@ planet_radius <- sea_pollution_raw %>%
 usethis::use_data(shadow_length, overwrite = TRUE)
 usethis::use_data(sea_pollution, overwrite = TRUE)
 usethis::use_data(planet_radius, overwrite = TRUE)
+usethis::use_data(gender, overwrite = TRUE)
 

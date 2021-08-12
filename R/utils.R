@@ -10,7 +10,7 @@
 #' @aliases 데이터파일가져오기
 #' @examples
 #' \dontrun{
-#' # 현재 작업 경로에 데이터 파일을 복사한다.
+#' # `inst/extdata` 디렉토리 경로에 데이터 파일을 복사한다.
 #' get_rawdata()
 #'
 #' # c:/temp에 선택한 데이터 파일을 복사한다.
@@ -18,7 +18,7 @@
 #' }
 #'
 #' @importFrom utils menu unzip
-get_rawdata <- function(dest_dir = ".") {
+get_rawdata <- function(dest_dir = "inst/extdata") {
     pkg_resource = function(...) {
         system.file(..., package = "statdata")
     }
@@ -30,19 +30,21 @@ get_rawdata <- function(dest_dir = ".") {
     #            "전체 파일",
     #            "취소하기")
 
-    fname <- c("\ucd08\ub4f1\uacfc\ud5593-2\uadf8\ub9bc\uc790\uae38\uc774(136\ucabd).csv",
-               "\ucd08\ub4f1\uacfc\ud5593-2\uc6b0\ub9ac\ub098\ub77c\ud574\uc5ed\uc624\uc5fc\uc2e4\ud0dc\uc790\ub8cc(104\ucabd).csv",
+    fname <- c("\ucde8\uc18c\ud558\uae30",
                "\uc804\uccb4 \ud30c\uc77c",
-               "\ucde8\uc18c\ud558\uae30")
+               "\ucd08\ub4f1\uacfc\ud5593-2\uadf8\ub9bc\uc790\uae38\uc774(136\ucabd).csv",
+               "\ucd08\ub4f1\uacfc\ud5593-2\uc6b0\ub9ac\ub098\ub77c\ud574\uc5ed\uc624\uc5fc\uc2e4\ud0dc\uc790\ub8cc(104\ucabd).csv",
+               "\ucd08\ub4f1\uacfc\ud5595-2\uac01\ud589\uc131\uc758\ubc18\uc9c0\ub984(141\ucabd).csv",
+               "025\uc6d0\uc2dc_\uc131\ubcc4.csv")
 
     # stringi::stri_escape_unicode("가져올 데이터 파일 선택하기")
     index_choiced <- utils::menu(fname, graphics = FALSE,
                                  title = "\uac00\uc838\uc62c \ub370\uc774\ud130 \ud30c\uc77c \uc120\ud0dd\ud558\uae30")
 
-    if (index_choiced == 4)
+    if (index_choiced == 1)
         return()
 
-    if (index_choiced == 3) {
+    if (index_choiced == 2) {
         utils::unzip(zip_name, exdir = dest_dir)
     } else {
         utils::unzip(zip_name, files = fname[index_choiced], exdir = dest_dir)
@@ -55,6 +57,8 @@ get_rawdata <- function(dest_dir = ".") {
 #
 # convmv -f utf8 -t utf8 --nfc --notest 초등과학3-2그림자길이(136쪽).csv
 # convmv -f utf8 -t utf8 --nfc --notest 초등과학3-2우리나라해역오염실태자료(104쪽).csv
+# convmv -f utf8 -t utf8 --nfc --notest 초등과학5-2각행성의반지름(141쪽).csv
+# convmv -f utf8 -t utf8 --nfc --notest 025원시_성별.csv
 #
 # 인코딩한 후에는 rawdata.zip라는 이름으로 압축한다.
 

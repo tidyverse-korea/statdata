@@ -5,7 +5,7 @@
 \alias{데이터파일가져오기}
 \title{소스 데이터 파일 가져오기}
 \usage{
-get_rawdata(dest_dir = ".")
+get_rawdata(dest_dir = "inst/extdata")
 }
 \arguments{
 \item{dest_dir}{character. 파일을 가져올 디렉토리 경로.

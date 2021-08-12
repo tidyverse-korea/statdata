@@ -64,3 +64,20 @@ NULL
 #' @source \url{http://estat.me/estat/eStat/}
 #' @keywords datasets
 "planet_radius"
+
+#' gender : 원시
+#'
+#' 초등 남성과 여성 원시 데이터
+#'
+#'
+#' @format 변수 1개와 10행을 갖는 티블 데이터프레임:
+#' @aliases 성별
+#' @docType data
+#' @return \item{gender}{데이터프레임}
+#' \describe{
+#'   \item{\code{성별}}{character 남, 여 두 값중 하나를 갖는 성별}
+#'}
+#' @details  초등 원시 성별 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"gender"
