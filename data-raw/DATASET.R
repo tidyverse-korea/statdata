@@ -123,6 +123,171 @@ global_warming_gas_raw <- readr::read_csv("inst/extdata/초등과학6-2지구온
 global_warming_gas <- global_warming_gas_raw %>%
     set_names(c("구분", "함유량"))
 
+
+## 이소연
+
+## 초등수학4-2거실의온도(익힘책116쪽).csv
+livingroom_temps_raw <- readr::read_csv("inst/extdata/초등수학4-2거실의온도(익힘책116쪽).csv")
+
+livingroom_temps <- livingroom_temps_raw %>% 
+    set_names(c("시각", "온도"))
+
+
+# 초등수학4-2꽃나무의키(익힘책113쪽).csv
+flower_tree_height_raw <- readr::read_csv("inst/extdata/초등수학4-2꽃나무의키(익힘책113쪽).csv")
+
+flower_tree_height <- flower_tree_height_raw %>%
+    set_names(c("월", "꽃나무키"))
+
+
+## 초등수학4-2민수의몸무게(익힘책112쪽).csv
+minsu_height_raw <- readr::read_csv("inst/extdata/초등수학4-2민수의몸무게(익힘책112쪽).csv")
+
+minsu_height <- minsu_height_raw %>%
+    set_names(c("학년", "몸무게"))
+
+
+## 초등수학4-2수면의높이(익힘책117쪽).csv
+water_height_raw <- readr::read_csv("inst/extdata/초등수학4-2수면의높이(익힘책117쪽).csv")
+
+water_height <- water_height_raw %>%
+    set_names(c("날짜", "수면의높이"))
+
+
+## 초등수학4-2윗몸일으키기기록(익힘책115쪽).csv
+situp_record_raw <- readr::read_csv("inst/extdata/초등수학4-2윗몸일으키기기록(익힘책115쪽).csv")
+
+situp_record <- situp_record_raw %>%
+    set_names(c("요일", "횟수"))
+
+
+# 초등수학4-2좋아하는민속놀이(익힘책110쪽).csv
+favorite_folk_game_raw <- readr::read_csv("inst/extdata/초등수학4-2좋아하는민속놀이(익힘책110쪽).csv")
+
+favorite_folk_game <- favorite_folk_game_raw %>%
+    set_names(c("민속놀이종목", "학생수"))
+
+
+## 초등수학4-2준성이의타자연습(익힘책125쪽).csv
+junseong_typing_practice_raw <- readr::read_csv("inst/extdata/초등수학4-2준성이의타자연습(익힘책125쪽).csv")
+
+junseong_typing_practice <- junseong_typing_practice_raw %>%
+    set_names(c("주", "타수"))
+
+
+## 초등수학4-2지역의월별강수량(익힘책114쪽).csv
+area_monthly_precipitation_raw <- readr::read_csv("inst/extdata/초등수학4-2지역의월별강수량(익힘책114쪽).csv")
+
+area_monthly_precipitation <- area_monthly_precipitation_raw %>%
+    set_names(c("월", "강수량"))
+
+
+## 초등수학4-2취미종목별참가학생수(익힘책111쪽).csv
+hobby_participating_num_raw <- readr::read_csv("inst/extdata/초등수학4-2취미종목별참가학생수(익힘책111쪽).csv")
+
+hobby_participating_num <- hobby_participating_num_raw %>%
+    set_names(c("취미종목", "학생수"))
+
+
+## 초등수학4-2코스모스키의변화(익힘책120쪽).csv
+cosmos_height_change_raw <- readr::read_csv("inst/extdata/초등수학4-2코스모스키의변화(익힘책120쪽).csv")
+
+cosmos_height_change <- cosmos_height_change_raw %>%
+    set_names(c("요일", "키"))
+
+
+## 초등수학4-2프로야구관중수(익힘책124쪽).csv
+baseball_spectators_num_raw <- readr::read_csv("inst/extdata/초등수학4-2프로야구관중수(익힘책124쪽).csv")
+
+baseball_spectators_num <- baseball_spectators_num_raw %>%
+    set_names(c("일", "관중수"))
+
+
+## 초등수학4-2하루중최고기온(익힘책116쪽).csv
+day_highest_temp_raw <- readr::read_csv("inst/extdata/초등수학4-2하루중최고기온(익힘책116쪽).csv")
+
+day_highest_temp <- day_highest_temp_raw %>%
+    set_names(c("날짜", "최고기온"))
+
+
+## 초등수학4-2하루중최저기온(익힘책118쪽).csv
+day_lowest_temp_raw <- readr::read_csv("inst/extdata/초등수학4-2하루중최저기온(익힘책118쪽).csv")
+
+day_lowest_temp <- day_lowest_temp_raw %>%
+    set_names(c("날짜", "최저기온"))
+
+
+## 초등수학4-2학생들몸무게(익힘책94쪽).csv
+students_weight_raw <- readr::read_csv("inst/extdata/초등수학4-2학생들몸무게(익힘책94쪽).csv")
+
+students_weight <- students_weight_raw %>%
+    set_names(c("이름", "몸무게"))
+
+
+## 초등수학4-2학생들키(익힘책95쪽).csv
+students_height_raw <- readr::read_csv("inst/extdata/초등수학4-2학생들키(익힘책95쪽).csv")
+
+students_height <- students_height_raw %>%
+    set_names(c("이름", "키"))
+
+
+## 초등수학5-2국가별도시화율변화(익힘책120쪽).csv
+country_urbanization_rate_raw <- readr::read_csv("inst/extdata/초등수학5-2국가별도시화율변화(익힘책120쪽).csv")
+
+country_urbanization_rate <- country_urbanization_rate_raw %>%
+    set_names(c("년도", "한국", "일본", "중국", "미국"))
+
+
+## 초등수학5-2농사짓는가구수(익힘책102쪽).csv
+farming_num_raw <- readr::read_csv("inst/extdata/초등수학5-2농사짓는가구수(익힘책102쪽).csv")
+
+farming_num <- farming_num_raw %>%
+    set_names(c("연도", "가구수"))
+
+
+## 초등수학5-2시간별소금양에따른실험자료(익힘책173쪽).csv
+expt_data_salt_hour_raw <- readr::read_csv("inst/extdata/초등수학5-2시간별소금양에따른실험자료(익힘책173쪽).csv")
+
+expt_data_salt_hour <- expt_data_salt_hour_raw %>%
+    set_names(c("구분", "소금0g", "소금10g", "소금20g", "소금30g", "소금40g"))
+
+
+## 초등수학5-2신생아수(익힘책111쪽).csv
+newborn_num_raw <- readr::read_csv("inst/extdata/초등수학5-2신생아수(익힘책111쪽).csv")
+
+newborn_num <- newborn_num_raw %>%
+    set_names(c("연도", "신생아수"))
+
+
+## 초등수학5-2월별상담실이용자수(익힘책109쪽).csv
+counseling_user_num_raw <- readr::read_csv("inst/extdata/초등수학5-2월별상담실이용자수(익힘책109쪽).csv")
+
+counseling_user_num <- counseling_user_num_raw %>%
+    set_names(c("월", "이용자"))
+
+
+## 초등수학5-2제기차기횟수(익힘책105쪽).csv
+kicks_num_raw <- readr::read_csv("inst/extdata/초등수학5-2제기차기횟수(익힘책105쪽).csv")
+
+kicks_num <- kicks_num_raw %>%
+    set_names("횟수")
+
+
+## 초등수학5-2진욱이의단원평가점수(익힘책108쪽).csv
+jinwook_unit_score_raw <- readr::read_csv("inst/extdata/초등수학5-2진욱이의단원평가점수(익힘책108쪽).csv")
+
+jinwook_unit_score <- jinwook_unit_score_raw %>%
+    set_names(c("단원", "점수"))
+
+
+## 초등수학5-2학생들의수학점수(익힘책104쪽).csv
+students_math_score_raw <- readr::read_csv("inst/extdata/초등수학5-2학생들의수학점수(익힘책104쪽).csv")
+
+students_math_score <- students_math_score_raw %>%
+    set_names("점수")
+
+
+
 # 2. 데이터셋 팩키지 추가 ------
 
 usethis::use_data(shadow_length, overwrite = TRUE)
@@ -141,4 +306,27 @@ usethis::use_data(CO2_emissions, overwrite = TRUE)
 usethis::use_data(ice_melt_color, overwrite = TRUE)
 usethis::use_data(seoul_daegu_temp, overwrite = TRUE)
 usethis::use_data(global_warming_gas, overwrite = TRUE)
+usethis::use_data(livingroom_temps, overwrite = TRUE)
+usethis::use_data(flower_tree_height, overwrite = TRUE)
+usethis::use_data(minsu_height, overwrite = TRUE)
+usethis::use_data(water_height, overwrite = TRUE)
+usethis::use_data(situp_record, overwrite = TRUE)
+usethis::use_data(favorite_folk_game, overwrite = TRUE)
+usethis::use_data(junseong_typing_practice, overwrite = TRUE)
+usethis::use_data(area_monthly_precipitation, overwrite = TRUE)
+usethis::use_data(hobby_participating_num, overwrite = TRUE)
+usethis::use_data(cosmos_height_change, overwrite = TRUE)
+usethis::use_data(baseball_spectators_num, overwrite = TRUE)
+usethis::use_data(day_highest_temp, overwrite = TRUE)
+usethis::use_data(day_lowest_temp, overwrite = TRUE)
+usethis::use_data(students_weight, overwrite = TRUE)
+usethis::use_data(students_height, overwrite = TRUE)
+usethis::use_data(country_urbanization_rate, overwrite = TRUE)
+usethis::use_data(farming_num, overwrite = TRUE)
+usethis::use_data(expt_data_salt_hour, overwrite = TRUE)
+usethis::use_data(newborn_num, overwrite = TRUE)
+usethis::use_data(counseling_user_num, overwrite = TRUE)
+usethis::use_data(kicks_num, overwrite = TRUE)
+usethis::use_data(jinwook_unit_score, overwrite = TRUE)
+usethis::use_data(students_math_score, overwrite = TRUE)
 usethis::use_data(gender, overwrite = TRUE)
