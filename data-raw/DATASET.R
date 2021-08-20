@@ -124,8 +124,6 @@ global_warming_gas <- global_warming_gas_raw %>%
     set_names(c("구분", "함유량"))
 
 
-## 이소연
-
 ## 초등수학4-2거실의온도(익힘책116쪽).csv
 livingroom_temps_raw <- readr::read_csv("inst/extdata/초등수학4-2거실의온도(익힘책116쪽).csv")
 
