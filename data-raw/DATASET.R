@@ -131,7 +131,7 @@ livingroom_temps <- livingroom_temps_raw %>%
     set_names(c("시각", "온도"))
 
 
-# 초등수학4-2꽃나무의키(익힘책113쪽).csv
+## 초등수학4-2꽃나무의키(익힘책113쪽).csv
 flower_tree_height_raw <- readr::read_csv("inst/extdata/초등수학4-2꽃나무의키(익힘책113쪽).csv")
 
 flower_tree_height <- flower_tree_height_raw %>%
@@ -159,7 +159,7 @@ situp_record <- situp_record_raw %>%
     set_names(c("요일", "횟수"))
 
 
-# 초등수학4-2좋아하는민속놀이(익힘책110쪽).csv
+## 초등수학4-2좋아하는민속놀이(익힘책110쪽).csv
 favorite_folk_game_raw <- readr::read_csv("inst/extdata/초등수학4-2좋아하는민속놀이(익힘책110쪽).csv")
 
 favorite_folk_game <- favorite_folk_game_raw %>%
