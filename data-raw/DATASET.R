@@ -72,14 +72,14 @@ water_temp_boric_acid <- water_temp_boric_acid_raw %>%
 water_temp_liquid_height_raw <- readr::read_csv("inst/extdata/초등과학5-2물의온도와액체기둥높이(21쪽).csv")
 
 water_temp_liquid_height <- water_temp_liquid_height_raw %>%
-    set_names(c("물의온도", "식초기둥높이", "우유기둥높이", "유리세정제기둥높이"))
+    set_names(c("물온도", "식초기둥높이", "우유기둥높이", "유리세정제기둥높이"))
 
 ## 초등과학5-2탐구결과(173쪽).csv
 
 search_result_raw <- readr::read_csv("inst/extdata/초등과학5-2탐구결과(173쪽).csv")
 
 search_result <- search_result_raw %>%
-    set_names(c("소금0g", "소금10g", "소금20g", "소금30g", "소금40g"))
+    set_names(c("구분", "소금0g", "소금10g", "소금20g", "소금30g", "소금40g"))
 
 ## 초등과학5-2태양에서행성까지의상대적거리(143쪽).csv
 
@@ -122,7 +122,6 @@ global_warming_gas_raw <- readr::read_csv("inst/extdata/초등과학6-2지구온
 
 global_warming_gas <- global_warming_gas_raw %>%
     set_names(c("구분", "함유량"))
-
 
 ## 초등수학4-2거실의온도(익힘책116쪽).csv
 livingroom_temps_raw <- readr::read_csv("inst/extdata/초등수학4-2거실의온도(익힘책116쪽).csv")
@@ -285,46 +284,14 @@ students_math_score <- students_math_score_raw %>%
     set_names("점수")
 
 
+usethis::use_data(ground_water_temp, overwrite = TRUE)
+usethis::use_data(population_age, overwrite = TRUE)
+usethis::use_data(urbanization, overwrite = TRUE)
+usethis::use_data(export_amount, overwrite = TRUE)
+usethis::use_data(rice_consumption_person, overwrite = TRUE)
+usethis::use_data(rice_produced_taken, overwrite = TRUE)
+usethis::use_data(high_speed_internet, overwrite = TRUE)
+usethis::use_data(privacy_infringement, overwrite = TRUE)
+usethis::use_data(rice_consumption_world, overwrite = TRUE)
+usethis::use_data(agro_fishery_in_out, overwrite = TRUE)
 
-# 2. 데이터셋 팩키지 추가 ------
-
-usethis::use_data(shadow_length, overwrite = TRUE)
-usethis::use_data(sea_pollution, overwrite = TRUE)
-usethis::use_data(planet_radius, overwrite = TRUE)
-usethis::use_data(distance_time_graph, overwrite = TRUE)
-usethis::use_data(transportation, overwrite = TRUE)
-usethis::use_data(running_record, overwrite = TRUE)
-usethis::use_data(water_temp_height, overwrite = TRUE)
-usethis::use_data(water_temp_boric_acid, overwrite = TRUE)
-usethis::use_data(water_temp_liquid_height, overwrite = TRUE)
-usethis::use_data(search_result, overwrite = TRUE)
-usethis::use_data(planet_distance, overwrite = TRUE)
-usethis::use_data(gas_in_air, overwrite = TRUE)
-usethis::use_data(CO2_emissions, overwrite = TRUE)
-usethis::use_data(ice_melt_color, overwrite = TRUE)
-usethis::use_data(seoul_daegu_temp, overwrite = TRUE)
-usethis::use_data(global_warming_gas, overwrite = TRUE)
-usethis::use_data(livingroom_temps, overwrite = TRUE)
-usethis::use_data(flower_tree_height, overwrite = TRUE)
-usethis::use_data(minsu_height, overwrite = TRUE)
-usethis::use_data(water_height, overwrite = TRUE)
-usethis::use_data(situp_record, overwrite = TRUE)
-usethis::use_data(favorite_folk_game, overwrite = TRUE)
-usethis::use_data(junseong_typing_practice, overwrite = TRUE)
-usethis::use_data(area_monthly_precipitation, overwrite = TRUE)
-usethis::use_data(hobby_participating_num, overwrite = TRUE)
-usethis::use_data(cosmos_height_change, overwrite = TRUE)
-usethis::use_data(baseball_spectators_num, overwrite = TRUE)
-usethis::use_data(day_highest_temp, overwrite = TRUE)
-usethis::use_data(day_lowest_temp, overwrite = TRUE)
-usethis::use_data(students_weight, overwrite = TRUE)
-usethis::use_data(students_height, overwrite = TRUE)
-usethis::use_data(country_urbanization_rate, overwrite = TRUE)
-usethis::use_data(farming_num, overwrite = TRUE)
-usethis::use_data(expt_data_salt_hour, overwrite = TRUE)
-usethis::use_data(newborn_num, overwrite = TRUE)
-usethis::use_data(counseling_user_num, overwrite = TRUE)
-usethis::use_data(kicks_num, overwrite = TRUE)
-usethis::use_data(jinwook_unit_score, overwrite = TRUE)
-usethis::use_data(students_math_score, overwrite = TRUE)
-usethis::use_data(gender, overwrite = TRUE)
