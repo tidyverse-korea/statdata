@@ -126,7 +126,7 @@ global_warming_gas <- global_warming_gas_raw %>%
 ## 초등수학4-2거실의온도(익힘책116쪽).csv
 livingroom_temps_raw <- readr::read_csv("inst/extdata/초등수학4-2거실의온도(익힘책116쪽).csv")
 
-livingroom_temps <- livingroom_temps_raw %>% 
+livingroom_temps <- livingroom_temps_raw %>%
     set_names(c("시각", "온도"))
 
 
@@ -283,6 +283,75 @@ students_math_score_raw <- readr::read_csv("inst/extdata/초등수학5-2학생�
 students_math_score <- students_math_score_raw %>%
     set_names("점수")
 
+## 초등과학6-2지면과수면의온도차이(33쪽).csv
+
+ground_water_temp_raw <- readr::read_csv("inst/extdata/초등과학6-2지면과수면의온도차이(33쪽).csv")
+
+ground_water_temp <- ground_water_temp_raw %>%
+    set_names(c("시각", "지면온도", "수면온도"))
+
+## 초등사회4-2연령별인구구성비변화(116쪽).csv
+
+population_age_raw <- readr::read_csv("inst/extdata/초등사회4-2연령별인구구성비변화(116쪽).csv")
+
+population_age <- population_age_raw %>%
+    set_names(c("연도", "0~14세", "15~64세", "65세이상"))
+
+## 초등사회5-2국가별도시화율변화(120쪽).csv
+
+urbanization_raw <- readr::read_csv("inst/extdata/초등사회5-2국가별도시화율변화(120쪽).csv")
+
+urbanization <- urbanization_raw %>%
+    set_names(c("년도", "한국", "일본", "중국", "미국"))
+
+## 초등사회5-2대한민국수출액(119쪽).csv
+
+export_amount_raw <- readr::read_csv("inst/extdata/초등사회5-2대한민국수출액(119쪽).csv")
+
+export_amount <- export_amount_raw %>%
+    set_names(c("연도", "수출액"))
+
+## 초등사회5-2일제시대1인당쌀소비량(78쪽).csv
+
+rice_consumption_person_raw <- readr::read_csv("inst/extdata/초등사회5-2일제시대1인당쌀소비량(78쪽).csv")
+
+rice_consumption_person <- rice_consumption_person_raw %>%
+    set_names(c("연도", "1인당소비량"))
+
+## 초등사회5-2일제시대쌀생산량과수탈량자료(78쪽).csv
+
+rice_produced_taken_raw <- readr::read_csv("inst/extdata/초등사회5-2일제시대쌀생산량과수탈량자료(78쪽).csv")
+
+rice_produced_taken <- rice_produced_taken_raw %>%
+    set_names(c("연도", "쌀생산량", "수탈량"))
+
+## 초등사회5-2초고속인터넷가입자수(120쪽).csv
+
+high_speed_internet_raw <- readr::read_csv("inst/extdata/초등사회5-2초고속인터넷가입자수(120쪽).csv")
+
+high_speed_internet <- high_speed_internet_raw %>%
+    set_names(c("연도", "가입자수"))
+
+## 초등사회6-2개인정보침해신고건수(97쪽).csv
+
+privacy_infringement_raw <- readr::read_csv("inst/extdata/초등사회6-2개인정보침해신고건수(97쪽).csv")
+
+privacy_infringement <- privacy_infringement_raw %>%
+    set_names(c("년도", "건수"))
+
+## 초등사회6-2쌀소비량국제비교(83쪽).csv
+
+rice_consumption_world_raw <- readr::read_csv("inst/extdata/초등사회6-2쌀소비량국제비교(83쪽).csv")
+
+rice_consumption_world <- rice_consumption_world_raw %>%
+    set_names(c("국가", "1999", "2008"))
+
+## 초등사회6-2우리나라농수산물의수입과수출현황(105쪽).csv
+
+agro_fishery_in_out_raw <- readr::read_csv("inst/extdata/초등사회6-2우리나라농수산물의수입과수출현황(105쪽).csv")
+
+agro_fishery_in_out <- agro_fishery_in_out_raw %>%
+    set_names(c("년도", "수입액", "수출액"))
 
 usethis::use_data(ground_water_temp, overwrite = TRUE)
 usethis::use_data(population_age, overwrite = TRUE)
@@ -294,4 +363,48 @@ usethis::use_data(high_speed_internet, overwrite = TRUE)
 usethis::use_data(privacy_infringement, overwrite = TRUE)
 usethis::use_data(rice_consumption_world, overwrite = TRUE)
 usethis::use_data(agro_fishery_in_out, overwrite = TRUE)
+
+usethis::use_data(shadow_length, overwrite = TRUE)
+usethis::use_data(sea_pollution, overwrite = TRUE)
+usethis::use_data(planet_radius, overwrite = TRUE)
+usethis::use_data(gender, overwrite = TRUE)
+usethis::use_data(distance_time_graph, overwrite = TRUE)
+usethis::use_data(transportation, overwrite = TRUE)
+usethis::use_data(running_record, overwrite = TRUE)
+usethis::use_data(water_temp_height, overwrite = TRUE)
+usethis::use_data(water_temp_boric_acid, overwrite = TRUE)
+usethis::use_data(water_temp_liquid_height, overwrite = TRUE)
+usethis::use_data(search_result, overwrite = TRUE)
+usethis::use_data(planet_distance, overwrite = TRUE)
+usethis::use_data(gas_in_air, overwrite = TRUE)
+usethis::use_data(CO2_emissions, overwrite = TRUE)
+usethis::use_data(ice_melt_color, overwrite = TRUE)
+usethis::use_data(seoul_daegu_temp, overwrite = TRUE)
+usethis::use_data(global_warming_gas, overwrite = TRUE)
+
+usethis::use_data(livingroom_temps, overwrite = TRUE)
+usethis::use_data(flower_tree_height, overwrite = TRUE)
+usethis::use_data(minsu_height, overwrite = TRUE)
+usethis::use_data(water_height, overwrite = TRUE)
+usethis::use_data(situp_record, overwrite = TRUE)
+usethis::use_data(favorite_folk_game, overwrite = TRUE)
+usethis::use_data(junseong_typing_practice, overwrite = TRUE)
+usethis::use_data(area_monthly_precipitation, overwrite = TRUE)
+usethis::use_data(hobby_participating_num, overwrite = TRUE)
+usethis::use_data(cosmos_height_change, overwrite = TRUE)
+usethis::use_data(baseball_spectators_num, overwrite = TRUE)
+usethis::use_data(day_highest_temp, overwrite = TRUE)
+usethis::use_data(day_lowest_temp, overwrite = TRUE)
+usethis::use_data(students_weight, overwrite = TRUE)
+usethis::use_data(students_height, overwrite = TRUE)
+usethis::use_data(country_urbanization_rate, overwrite = TRUE)
+usethis::use_data(farming_num, overwrite = TRUE)
+usethis::use_data(expt_data_salt_hour, overwrite = TRUE)
+usethis::use_data(newborn_num, overwrite = TRUE)
+usethis::use_data(counseling_user_num, overwrite = TRUE)
+usethis::use_data(kicks_num, overwrite = TRUE)
+usethis::use_data(jinwook_unit_score, overwrite = TRUE)
+usethis::use_data(students_math_score, overwrite = TRUE)
+
+usethis::use_data(gender, overwrite = TRUE)
 
