@@ -204,7 +204,7 @@ cosmos_height_change <- cosmos_height_change_raw %>%
 baseball_spectators_num_raw <- readr::read_csv("inst/extdata/초등수학4-2프로야구관중수(익힘책124쪽).csv")
 
 baseball_spectators_num <- baseball_spectators_num_raw %>%
-    set_names(c("일", "관중수"))
+    set_names(c("년", "관중수"))
 
 
 ## 초등수학4-2하루중최고기온(익힘책116쪽).csv
