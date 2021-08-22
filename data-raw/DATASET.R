@@ -123,6 +123,13 @@ global_warming_gas_raw <- readr::read_csv("inst/extdata/초등과학6-2지구온
 global_warming_gas <- global_warming_gas_raw %>%
     set_names(c("구분", "함유량"))
 
+## 초등과학6-2지면과수면의온도차이(33쪽).csv
+
+ground_water_temp_raw <- readr::read_csv("inst/extdata/초등과학6-2지면과수면의온도차이(33쪽).csv")
+
+ground_water_temp <- ground_water_temp_raw %>%
+    set_names(c("시각", "지면온도", "수면온도"))
+
 ## 초등수학4-2거실의온도(익힘책116쪽).csv
 livingroom_temps_raw <- readr::read_csv("inst/extdata/초등수학4-2거실의온도(익힘책116쪽).csv")
 
@@ -281,14 +288,7 @@ jinwook_unit_score <- jinwook_unit_score_raw %>%
 students_math_score_raw <- readr::read_csv("inst/extdata/초등수학5-2학생들의수학점수(익힘책104쪽).csv")
 
 students_math_score <- students_math_score_raw %>%
-    set_names("점수")
-
-## 초등과학6-2지면과수면의온도차이(33쪽).csv
-
-ground_water_temp_raw <- readr::read_csv("inst/extdata/초등과학6-2지면과수면의온도차이(33쪽).csv")
-
-ground_water_temp <- ground_water_temp_raw %>%
-    set_names(c("시각", "지면온도", "수면온도"))
+    set_names(c("점수"))
 
 ## 초등사회4-2연령별인구구성비변화(116쪽).csv
 
@@ -353,7 +353,8 @@ agro_fishery_in_out_raw <- readr::read_csv("inst/extdata/초등사회6-2우리�
 agro_fishery_in_out <- agro_fishery_in_out_raw %>%
     set_names(c("년도", "수입액", "수출액"))
 
-usethis::use_data(ground_water_temp, overwrite = TRUE)
+# 2. 데이터셋 팩키지 추가 ------
+
 usethis::use_data(population_age, overwrite = TRUE)
 usethis::use_data(urbanization, overwrite = TRUE)
 usethis::use_data(export_amount, overwrite = TRUE)
@@ -381,6 +382,7 @@ usethis::use_data(CO2_emissions, overwrite = TRUE)
 usethis::use_data(ice_melt_color, overwrite = TRUE)
 usethis::use_data(seoul_daegu_temp, overwrite = TRUE)
 usethis::use_data(global_warming_gas, overwrite = TRUE)
+usethis::use_data(ground_water_temp, overwrite = TRUE)
 
 usethis::use_data(livingroom_temps, overwrite = TRUE)
 usethis::use_data(flower_tree_height, overwrite = TRUE)
