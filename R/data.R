@@ -10,6 +10,25 @@
 #' @aliases statdata datadata-package
 NULL
 
+#' openstat_tbl : 초중등 통계 데이터셋
+#'
+#' 초중등 교과서에 언급된 데이터셋 모음.
+#'
+#'
+#' @format 변수 2개와 50행을 갖는 티블 데이터프레임:
+#' @aliases 데이터셋
+#' @docType data
+#' @return \item{openstat_tbl}{티블 데이터프레임}
+#' \describe{
+#'   \item{\code{name}}{character 파일명}
+#'   \item{\code{content}}{tibble 티블 데이터프레임}
+#'}
+#' @details  초중등 교과서에 언급된 데이터셋 모음
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"openstat_tbl"
+
+
 #' shadow_length : 초등과학 3-2
 #'
 #' 초등과학 3-2에 수록된 태양 각도와 그림자 길이에 대한 데이터다.

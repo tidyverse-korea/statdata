@@ -2,6 +2,18 @@
 library(tidyverse)
 # fs::dir_create("inst/extdata")
 
+# 0. 전체 데이터 -----
+
+csv_filenames <- fs::dir_ls(path = "inst/extdata/", glob = "*.csv")
+
+openstat_raw <- map(csv_filenames, read_csv)
+
+openstat_tbl <- openstat_raw %>%
+    enframe(name = "name", value = "content") %>%
+    mutate(name = str_remove(name, pattern = "inst/extdata/"))
+
+usethis::use_data(openstat_tbl, overwrite = TRUE)
+
 # 1. 초중등 교과서 데이터셋 ------
 
 ## 025원시_성별.csv
