@@ -902,3 +902,173 @@ NULL
 #' @source \url{http://estat.me/estat/eStat/}
 #' @keywords datasets
 "students_math_score"
+
+#' parent_income_child_edu : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 부모의 월평균 소득과 자녀의 진학관계 데이터
+#'
+#'
+#' @format 변수 2개와 4행을 갖는 티블 데이터프레임:
+#' @aliases 부모의 월평균 소득과 자녀의 진학관계
+#' @docType data
+#' @return \item{parent_income_child_edu}{데이터프레임}
+#' \describe{
+#'   \item{\code{구분}}{character 미진학, 전문대학, 지방 4년제, 서울 4년제로 구분되는 진학 정도}
+#'   \item{\code{월평균소득}}{double 진학정도에 따른 부모들의 월평균 소득, 단위: 만원}
+#'}
+#' @details  중등사회 1 교과서에 수록된 미진학, 전문대학, 지방 4년제, 서울 4년제로 구분되는 자녀의 진학정도에 따른 부모들의 월평균 소득 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"parent_income_child_edu"
+
+#' social_discrimination : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 사회적 차별 데이터
+#'
+#'
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
+#' @aliases 사회적 차별
+#' @docType data
+#' @return \item{social_discrimination}{데이터프레임}
+#' \describe{
+#'   \item{\code{구분}}{character 학력, 나이, 성 등 사회적 차별의 원인}
+#'   \item{\code{비율}}{double 각 원인별로 사회적 차별이 일어나는 비율, 단위: %}
+#'}
+#' @details  중등사회 1 교과서에 수록된 학력, 나이, 성 등 사회적 차별의 원인별로 사회적 차별이 일어나는 비율 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"social_discrimination"
+
+#' seoul_london_monthly_temp : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 서울과 런던의 월평균 기온 비교 데이터
+#'
+#'
+#' @format 변수 3개와 12행을 갖는 티블 데이터프레임:
+#' @aliases 서울과 런던의 월평균 기온 비교
+#' @docType data
+#' @return \item{seoul_london_monthly_temp}{데이터프레임}
+#' \describe{
+#'   \item{\code{월}}{character 1월부터 12월까지 매월}
+#'   \item{\code{서울기온}}{double 한 달동안 서울 기온의 평균, 단위: 섭씨}
+#'   \item{\code{런던기온}}{double 한 달동안 런던 기온의 평균, 단위: 섭씨}
+#'}
+#' @details  중등사회 1 교과서에 수록된 1월부터 12월까지 매달 서울과 런던의 평균 기온 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"seoul_london_monthly_temp"
+
+#' world_10_population : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 세계 10대 인구 국가 데이터
+#'
+#'
+#' @format 변수 2개와 10행을 갖는 티블 데이터프레임:
+#' @aliases 세계 10대 인구 국가
+#' @docType data
+#' @return \item{world_10_population}{데이터프레임}
+#' \describe{
+#'   \item{\code{국가}}{character 세계에서 인구수가 가장 많은 10개 국가의 이름}
+#'   \item{\code{인구수}}{double 국가별 인구의 수, 단위: 억명}
+#'}
+#' @details  중등사회 1 교과서에 수록된 세계에서 인구수가 가장 많은 10개 국가의 국가별 인구의 수 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"world_10_population"
+
+#' world_up_65_population : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 세계의 65세 이상 예상 인구 비율 데이터
+#'
+#'
+#' @format 변수 4개와 7행을 갖는 티블 데이터프레임:
+#' @aliases 세계의 65세 이상 예상 인구 비율
+#' @docType data
+#' @return \item{world_up_65_population}{데이터프레임}
+#' \describe{
+#'   \item{\code{구분}}{character 세계와 6개 대륙의 이름}
+#'   \item{\code{2010년}}{double 2010년 대륙별로 예상되는 65세 이상 인구의 비율, 단위: %}
+#'   \item{\code{2025년}}{double 2025년 대륙별로 예상되는 65세 이상 인구의 비율, 단위: %}
+#'   \item{\code{2050년}}{double 2050년 대륙별로 예상되는 65세 이상 인구의 비율, 단위: %}
+#'}
+#' @details  중등사회 1 교과서에 수록된 세계와 6개 대륙별로 예상되는 65세 이상 인구의 비율 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"world_up_65_population"
+
+#' metropolitan_concentration : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 수도권 집중도 데이터
+#'
+#'
+#' @format 변수 3개와 6행을 갖는 티블 데이터프레임:
+#' @aliases 수도권 집중도
+#' @docType data
+#' @return \item{metropolitan_concentration}{데이터프레임}
+#' \describe{
+#'   \item{\code{구분}}{character 면적, 인구, 지역생산 등 수도권과 비수도권의 정도를 비교하는 지표의 이름}
+#'   \item{\code{수도권}}{double 지표별로 수도권이 해당하는 정도, 단위: 구분에 따라 다름}
+#'   \item{\code{비수도권}}{double 지표별로 수도권이 해당하는 정도, 단위: 구분에 따라 다름}
+#'}
+#' @details  중등사회 1 교과서에 수록된 면적, 인구, 지역생산 등 수도권과 비수도권의 정도를 비교하는 지표를 통해 파악할 수 있는 수도권 집중 정도 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"metropolitan_concentration"
+
+#' estimated_population_sex_age : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 우리나라 1960년 2020년 성별 연령별 예상 인구 비율 데이터
+#'
+#'
+#' @format 변수 5개와 9행을 갖는 티블 데이터프레임:
+#' @aliases 우리나라 1960년 2020년 성별 연령별 예상 인구 비율
+#' @docType data
+#' @return \item{estimated_population_sex_age}{데이터프레임}
+#' \describe{
+#'   \item{\code{연령}}{character 10세 미만부터 80세 이상까지 10세를 주기로 나눈 연령의 정도}
+#'   \item{\code{1960남}}{double 1960년 조사한 남성의 연령별 비율, 단위: %}
+#'   \item{\code{1960여}}{double 1960년 조사한 여성의 연령별 비율, 단위: %}
+#'   \item{\code{2020남}}{double 2020년 남성의 연령별 비율을 예상한 값, 단위: %}
+#'   \item{\code{2020여}}{double 2020년 여성의 연령별 비율을 예상한 값, 단위: %}
+#'}
+#' @details  중등사회 1 교과서에 수록된 우리나라의 1960년 조사한 연령별 남성과 여성의 비율과 2020년의 연령별 남성과 여성의 비율을 예상한 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"estimated_population_sex_age"
+
+#' fertility_rate_sum_newborn_num : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 우리나라 연도별 합계 출산율과 출생아 수 데이터
+#'
+#'
+#' @format 변수 3개와 9행을 갖는 티블 데이터프레임:
+#' @aliases 우리나라 연도별 합계 출산율과 출생아 수
+#' @docType data
+#' @return \item{fertility_rate_sum_newborn_num}{데이터프레임}
+#' \describe{
+#'   \item{\code{년도}}{double 1970년부터 2009년까지 5년 주기, 단위: 년}
+#'   \item{\code{출생아수}}{double 연도별 출생아의 수, 단위: 만명}
+#'   \item{\code{합계출산율}}{double 연도별 출산율의 합계, 단위: 명}
+#'}
+#' @details  중등사회 1 교과서에 수록된 1970년부터 2009년까지 5년 주기로 조사된 연도별 출생아수와 합계 출산율 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"fertility_rate_sum_newborn_num"
+
+#' sound_imaging_service_export : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 음향 영상 서비스의 수출액 변화 데이터
+#'
+#'
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
+#' @aliases 음향 영상 서비스의 수출액 변화
+#' @docType data
+#' @return \item{sound_imaging_service_export}{데이터프레임}
+#' \describe{
+#'   \item{\code{년도}}{double 2003년부터 2007년까지 매년, 단위: 년}
+#'   \item{\code{수출액}}{double 음향 영상 서비스를 수출한 금액, 단위: 만$}
+#'}
+#' @details  중등사회 1 교과서에 수록된 2003년부터 2007년까지 매년 음향 영상 서비스를 수출한 금액 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"sound_imaging_service_export"

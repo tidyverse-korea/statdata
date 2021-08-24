@@ -369,7 +369,80 @@ agro_fishery_in_out_raw <- readr::read_csv("inst/extdata/초등사회6-2우리�
 agro_fishery_in_out <- agro_fishery_in_out_raw %>%
     set_names(c("년도", "수입액", "수출액"))
 
+## 중등사회1부모의월평균소득과자녀의진학관계(194쪽).csv
+
+parent_income_child_edu_raw <- readr::read_csv("inst/extdata/중등사회1부모의월평균소득과자녀의진학관계(194쪽).csv")
+
+parent_income_child_edu <- parent_income_child_edu_raw %>%
+    set_names(c("구분", "월평균소득"))
+
+## 중등사회1사회적차별1(151쪽).csv
+
+social_discrimination_raw <- readr::read_csv("inst/extdata/중등사회1사회적차별1(151쪽).csv")
+
+social_discrimination <- social_discrimination_raw %>%
+    set_names(c("구분", "비율"))
+
+## 중등사회1서울과런던의월평균기온비교(50쪽).csv
+
+seoul_london_monthly_temp_raw <- readr::read_csv("inst/extdata/중등사회1서울과런던의월평균기온비교(50쪽).csv")
+
+seoul_london_monthly_temp <- seoul_london_monthly_temp_raw %>%
+    set_names(c("월", "서울기온", "런던기온"))
+
+## 중등사회1세계10대인구국가(122쪽).csv
+
+world_10_population_raw <- readr::read_csv("inst/extdata/중등사회1세계10대인구국가(122쪽).csv")
+
+world_10_population <- world_10_population_raw %>%
+    set_names(c("국가", "인구수"))
+
+## 중등사회1세계의65세이상예상인구비율(138쪽).csv
+
+world_up_65_population_raw <- readr::read_csv("inst/extdata/중등사회1세계의65세이상예상인구비율(138쪽).csv")
+
+world_up_65_population <- world_up_65_population_raw %>%
+    set_names(c("구분", "2010년", "2025년", "2050년"))
+
+## 중등사회1수도권집중도(151쪽).csv
+
+metropolitan_concentration_raw <- readr::read_csv("inst/extdata/중등사회1수도권집중도(151쪽).csv")
+
+metropolitan_concentration <- metropolitan_concentration_raw %>%
+    set_names(c("구분", "수도권", "비수도권"))
+
+## 중등사회1우리나라1960년2020년성별연령별예상인구비율(143쪽).csv
+
+estimated_population_sex_age_raw <- readr::read_csv("inst/extdata/중등사회1우리나라1960년2020년성별연령별예상인구비율(143쪽).csv")
+
+estimated_population_sex_age <- estimated_population_sex_age_raw %>%
+    set_names(c("연령", "1960남", "1960여", "2020남", "2020여"))
+
+## 중등사회1우리나라연도별합계출산율과출생아수(140쪽).csv
+
+fertility_rate_sum_newborn_num_raw <- readr::read_csv("inst/extdata/중등사회1우리나라연도별합계출산율과출생아수(140쪽).csv")
+
+fertility_rate_sum_newborn_num <- fertility_rate_sum_newborn_num_raw %>%
+    set_names(c("년도", "출생아수", "합계출산율"))
+
+## 중등사회1음향영상서비스의수출액변화(116쪽).csv
+
+sound_imaging_service_export_raw <- readr::read_csv("inst/extdata/중등사회1음향영상서비스의수출액변화(116쪽).csv")
+
+sound_imaging_service_export <- sound_imaging_service_export_raw %>%
+    set_names(c("년도", "수출액"))
+
 # 2. 데이터셋 팩키지 추가 ------
+
+usethis::use_data(parent_income_child_edu, overwrite = TRUE)
+usethis::use_data(social_discrimination, overwrite = TRUE)
+usethis::use_data(seoul_london_monthly_temp, overwrite = TRUE)
+usethis::use_data(world_10_population, overwrite = TRUE)
+usethis::use_data(world_up_65_population, overwrite = TRUE)
+usethis::use_data(metropolitan_concentration, overwrite = TRUE)
+usethis::use_data(estimated_population_sex_age, overwrite = TRUE)
+usethis::use_data(fertility_rate_sum_newborn_num, overwrite = TRUE)
+usethis::use_data(sound_imaging_service_export, overwrite = TRUE)
 
 usethis::use_data(population_age, overwrite = TRUE)
 usethis::use_data(urbanization, overwrite = TRUE)
