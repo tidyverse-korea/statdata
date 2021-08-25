@@ -953,3 +953,204 @@ NULL
 #' @source \url{http://estat.me/estat/eStat/}
 #' @keywords datasets
 "students_math_score"
+
+
+#' mudflat_change_trend: 중등사회 5-3
+#'
+#' 중등사회 5-3 교과서에 수록된 갯벌 면적의 변화 추이 데이터
+#'
+#'
+#' @format 변수 2개와 4행을 갖는 티블 데이터프레임:
+#' @aliases 갯벌 면적의 변화 추이
+#' @docType data
+#' @return \item{mudflat_change_trend}{데이터프레임}
+#' \describe{
+#'   \item{\code{년도}}{double 1987, 1998, 2003, 2008년}
+#'   \item{\code{갯벌면적}}{double 갯벌면적}
+#'}
+#' @details  중등사회 5-3 교과서에 수록된 갯벌 면적의 변화 추이 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"mudflat_change_trend"
+
+
+#' mudflat_region_dist: 중등사회 5-3
+#'
+#' 중등사회 5-3 교과서에 수록된 갯벌의 지역별 분포 데이터
+#'
+#'
+#' @format 변수 3개와 7행을 갖는 티블 데이터프레임:
+#' @aliases 갯벌의 지역별 분포
+#' @docType data
+#' @return \item{mudflat_region_dist}{데이터프레임}
+#' \describe{
+#'   \item{\code{지역}}{character 7개 광역시}
+#'   \item{\code{면적}}{double 면적, km2}
+#'   \item{\code{면적비율}}{double 면적비율}
+#'}
+#' @details  중등사회 5-3 교과서에 수록된 갯벌의 지역별 분포 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"mudflat_region_dist"
+
+
+#' population_change_trend: 중등사회 5-3
+#'
+#' 중등사회 5-3 교과서에 수록된 광양시 인구 변화 데이터
+#'
+#'
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
+#' @aliases 광양시 인구 변화
+#' @docType data
+#' @return \item{population_change_trend}{데이터프레임}
+#' \describe{
+#'   \item{\code{구분}}{character 년도(년)}
+#'   \item{\code{인구}}{double 인구, 명}
+#'}
+#' @details  중등사회 5-3 교과서에 수록된 광양시 인구 변화 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"population_change_trend"
+
+#' oil_production_by_country: 중등사회 5-3
+#'
+#' 중등사회 5-3 교과서에 수록된 국가별 석유 생산량 데이터
+#'
+#'
+#' @format 변수 2개와 10행을 갖는 티블 데이터프레임:
+#' @aliases 석유 생산량 데이터
+#' @docType data
+#' @return \item{oil_production_by_country}{데이터프레임}
+#' \describe{
+#'   \item{\code{생산국}}{character 생산국}
+#'   \item{\code{생산량}}{double 생산량, 백만톤}
+#'}
+#' @details  중등사회 5-3 교과서에 수록된 국가별 석유 생산량 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"oil_production_by_country"
+
+
+#' ironstone_import_by_country: 중등사회 5-3
+#'
+#' 중등사회 5-3 교과서에 수록된 국가별 철광석 수입량 데이터
+#'
+#'
+#' @format 변수 3개와 6행을 갖는 티블 데이터프레임:
+#' @aliases 철광석 수입량 데이터
+#' @docType data
+#' @return \item{ironstone_import_by_country}{데이터프레임}
+#' \describe{
+#'   \item{\code{구분}}{character 국가}
+#'   \item{\code{수입량}}{double 수입량, 만톤}
+#'   \item{\code{비율}}{double 비율, %}
+#'}
+#' @details  중등사회 5-3 교과서에 수록된 국가별 철광석 수입량 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"ironstone_import_by_country"
+
+
+#' ratio_of_paddy_field: 중등사회 5-3
+#'
+#' 중등사회 5-3 교과서에 수록된 김포시 논밭비율의 변화 데이터
+#'
+#'
+#' @format 변수 5개와 2행을 갖는 티블 데이터프레임:
+#' @aliases 논밭비율의 변화 데이터
+#' @docType data
+#' @return \item{ratio_of_paddy_field}{데이터프레임}
+#' \describe{
+#'   \item{\code{구분}}{character 논, 밭}
+#'   \item{\code{1996년면적}}{double 면적, ha}
+#'   \item{\code{1996년비율}}{double 비율, %}
+#'   \item{\code{2008년면적}}{double 면적, ha}
+#'   \item{\code{2008년비율}}{double 비율, %}
+#'}
+#' @details  중등사회 5-3 교과서에 수록된 김포시 논밭비율의 변화 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"ratio_of_paddy_field"
+
+
+#' comp_mineral_resource: 중등사회 5-3
+#'
+#' 중등사회 5-3 교과서에 수록된 남북한광물자원 매장량 데이터
+#'
+#'
+#' @format 변수 3개와 12행을 갖는 티블 데이터프레임:
+#' @aliases 광물자원 매장량 데이터
+#' @docType data
+#' @return \item{comp_mineral_resource}{데이터프레임}
+#' \describe{
+#'   \item{\code{구분}}{character 자원 종류}
+#'   \item{\code{남한}}{double 비율, %}
+#'   \item{\code{북한}}{double 비율, %}
+#'}
+#' @details  중등사회 5-3 교과서에 수록된 남북한광물자원 매장량 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"comp_mineral_resource"
+
+
+#' population_change_mungyeong: 중등사회 5-3
+#'
+#' 중등사회 5-3 교과서에 수록된 문경시 인구변화 데이터
+#'
+#'
+#' @format 변수 2개와 10행을 갖는 티블 데이터프레임:
+#' @aliases 문경시 인구변화 데이터
+#' @docType data
+#' @return \item{population_change_mungyeong}{데이터프레임}
+#' \describe{
+#'   \item{\code{구분}}{character 자원 종류}
+#'   \item{\code{인구수}}{double 인구수, 명}
+#'}
+#' @details  중등사회 5-3 교과서에 수록된 문경시 인구변화 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"population_change_mungyeong"
+
+
+#' wheat_production: 중등사회 5-3
+#'
+#' 중등사회 5-3 교과서에 수록된 밀 생산량 데이터
+#'
+#'
+#' @format 변수 3개와 11행을 갖는 티블 데이터프레임:
+#' @aliases 밀 생산량 데이터
+#' @docType data
+#' @return \item{wheat_production}{데이터프레임}
+#' \describe{
+#'   \item{\code{구분}}{character 국가}
+#'   \item{\code{밀생산량}}{double 밀생산량, 만톤}
+#'   \item{\code{비율}}{double 비율, %}
+#'}
+#' @details  중등사회 5-3 교과서에 수록된 밀 생산량 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"wheat_production"
+
+
+
+#' wheat_export: 중등사회 5-3
+#'
+#' 중등사회 5-3 교과서에 수록된 밀 수출량 데이터
+#'
+#'
+#' @format 변수 3개와 8행을 갖는 티블 데이터프레임:
+#' @aliases 밀 수출량 데이터
+#' @docType data
+#' @return \item{wheat_export}{데이터프레임}
+#' \describe{
+#'   \item{\code{구분}}{character 국가}
+#'   \item{\code{밀수출량}}{double 밀수출량, 만톤}
+#'   \item{\code{비율}}{double 비율, %}
+#'}
+#' @details  중등사회 5-3 교과서에 수록된 밀 수출량 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"wheat_export"
+
+
+

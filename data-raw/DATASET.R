@@ -366,10 +366,8 @@ agro_fishery_in_out <- agro_fishery_in_out_raw %>%
     set_names(c("년도", "수입액", "수출액"))
 
 ## 중등사회3갯벌면적의변화추이(89쪽).csv
-# Sys.setlocale(category = "LC_ALL", locale = "us") 해야 데이터 로딩 가능
 
-mudflat_change_trend <- readr::read_csv("inst/extdata/중등사회3갯벌면적의변화추이(89쪽).csv",
-                                        locale = readr::locale(encoding = "euc-kr"))
+mudflat_change_trend <- readr::read_csv("inst/extdata/중등사회3갯벌면적의변화추이(89쪽).csv")
 
 mudflat_change_trend <- mudflat_change_trend %>%
     set_names(c("년도", "갯벌면적"))
@@ -400,7 +398,7 @@ oil_production_by_country <- oil_production_by_country %>%
 ironstone_import_by_country <- readr::read_csv("inst/extdata/중등사회3국가별철광석수입량(17쪽).csv")
 
 ironstone_import_by_country <- ironstone_import_by_country %>%
-    set_names(c("구분", "수입량(만톤)", "비울(%)"))
+    set_names(c("구분", "수입량(만톤)", "비율(%)"))
 
 ## 중등사회3김포시논밭비율변화(34쪽).csv
 
@@ -503,6 +501,7 @@ usethis::use_data(mudflat_region_dist, overwrite = TRUE)
 usethis::use_data(population_change_trend, overwrite = TRUE)
 usethis::use_data(oil_production_by_country, overwrite = TRUE)
 usethis::use_data(ironstone_import_by_country, overwrite = TRUE)
+usethis::use_data(ratio_of_paddy_field, overwrite = TRUE)
 usethis::use_data(comp_mineral_resource, overwrite = TRUE)
 usethis::use_data(population_change_mungyeong, overwrite = TRUE)
 usethis::use_data(wheat_production, overwrite = TRUE)
