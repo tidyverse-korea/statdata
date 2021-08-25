@@ -365,6 +365,81 @@ agro_fishery_in_out_raw <- readr::read_csv("inst/extdata/초등사회6-2우리�
 agro_fishery_in_out <- agro_fishery_in_out_raw %>%
     set_names(c("년도", "수입액", "수출액"))
 
+## 중등사회3갯벌면적의변화추이(89쪽).csv
+# Sys.setlocale(category = "LC_ALL", locale = "us") 해야 데이터 로딩 가능
+
+mudflat_change_trend <- readr::read_csv("inst/extdata/중등사회3갯벌면적의변화추이(89쪽).csv",
+                                        locale = readr::locale(encoding = "euc-kr"))
+
+mudflat_change_trend <- mudflat_change_trend %>%
+    set_names(c("년도", "갯벌면적"))
+
+## 중등사회3갯벌의지역별분포(88쪽).csv
+
+mudflat_region_dist <- readr::read_csv("inst/extdata/중등사회3갯벌의지역별분포(88쪽).csv")
+
+mudflat_region_dist <- mudflat_region_dist %>%
+    set_names(c("지역", "면적", "면적비율"))
+
+## 중등사회3광양시인구변화(44쪽).csv
+
+population_change_trend <- readr::read_csv("inst/extdata/중등사회3광양시인구변화(44쪽).csv")
+
+population_change_trend <- population_change_trend %>%
+    set_names(c("구분", "인구(명)"))
+
+## 중등사회3국가별석유생산량(17쪽).csv
+
+oil_production_by_country <- readr::read_csv("inst/extdata/중등사회3국가별석유생산량(17쪽).csv")
+
+oil_production_by_country <- oil_production_by_country %>%
+    set_names(c("생산국", "생산량(백만톤)"))
+
+## 중등사회3국가별철광석수입량(17쪽).csv
+
+ironstone_import_by_country <- readr::read_csv("inst/extdata/중등사회3국가별철광석수입량(17쪽).csv")
+
+ironstone_import_by_country <- ironstone_import_by_country %>%
+    set_names(c("구분", "수입량(만톤)", "비울(%)"))
+
+## 중등사회3김포시논밭비율변화(34쪽).csv
+
+ratio_of_paddy_field <- readr::read_csv("inst/extdata/중등사회3김포시논밭비율변화(34쪽).csv")
+
+ratio_of_paddy_field <- ratio_of_paddy_field %>%
+    set_names(c("구분", "1996년면적", "1996년비율", "2008년면적", "2008년비율"))
+
+## 중등사회3남북한광물자원매장량비교(114쪽).csv
+
+comp_mineral_resource <- readr::read_csv("inst/extdata/중등사회3남북한광물자원매장량비교(114쪽).csv")
+
+comp_mineral_resource <- comp_mineral_resource %>%
+    set_names(c("구분", "남한", "북한"))
+
+## 중등사회3문경시인구변화(54쪽).csv
+
+population_change_mungyeong <- readr::read_csv("inst/extdata/중등사회3문경시인구변화(54쪽).csv")
+
+population_change_mungyeong <- population_change_mungyeong %>%
+    set_names(c("구분", "인구수"))
+
+
+## 중등사회3밀생산량(16쪽).csv
+
+wheat_production <- readr::read_csv("inst/extdata/중등사회3밀생산량(16쪽).csv")
+
+wheat_production <- wheat_production %>%
+    set_names(c("구분", "밀생산량(만톤)", "비율(%)"))
+
+## 중등사회3밀수출량(16쪽).csv
+
+wheat_export <- readr::read_csv("inst/extdata/중등사회3밀수출량(16쪽).csv")
+
+wheat_export <- wheat_export %>%
+    set_names(c("구분", "수출량(만톤)", "비율(%)"))
+
+
+
 # 2. 데이터셋 팩키지 추가 ------
 
 usethis::use_data(population_age, overwrite = TRUE)
@@ -421,4 +496,16 @@ usethis::use_data(jinwook_unit_score, overwrite = TRUE)
 usethis::use_data(students_math_score, overwrite = TRUE)
 
 usethis::use_data(gender, overwrite = TRUE)
+
+
+usethis::use_data(mudflat_change_trend, overwrite = TRUE)
+usethis::use_data(mudflat_region_dist, overwrite = TRUE)
+usethis::use_data(population_change_trend, overwrite = TRUE)
+usethis::use_data(oil_production_by_country, overwrite = TRUE)
+usethis::use_data(ironstone_import_by_country, overwrite = TRUE)
+usethis::use_data(comp_mineral_resource, overwrite = TRUE)
+usethis::use_data(population_change_mungyeong, overwrite = TRUE)
+usethis::use_data(wheat_production, overwrite = TRUE)
+usethis::use_data(wheat_export, overwrite = TRUE)
+
 
