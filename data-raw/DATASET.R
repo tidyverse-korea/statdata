@@ -353,6 +353,118 @@ agro_fishery_in_out_raw <- readr::read_csv("inst/extdata/초등사회6-2우리�
 agro_fishery_in_out <- agro_fishery_in_out_raw %>%
     set_names(c("년도", "수입액", "수출액"))
 
+## 초등사회탐구4-2북한이탈주민수(1992-2008)(89쪽).csv
+
+north_korea_defectors_population_raw <- readr::read_csv("inst/extdata/초등사회탐구4-2북한이탈주민수(1992-2008)(89쪽).csv")
+
+north_korea_defectors_population <- north_korea_defectors_population_raw %>%
+    set_names(c("년도", "이탈주민"))
+
+## 초등사회탐구4-2산업별종사자수(18쪽).csv
+
+employment_by_industry_raw <- readr::read_csv("inst/extdata/초등사회탐구4-2산업별종사자수(18쪽).csv")
+
+employment_by_industry <- employment_by_industry_raw %>%
+    set_names(c("산업종류", "종사자수"))
+
+## 초등사회탐구4-2서울인구이동의변화(1980-2015)(71쪽).csv
+
+seoul_migration_population_history_raw <- readr::read_csv("inst/extdata/초등사회탐구4-2서울인구이동의변화(1980-2015)(71쪽).csv")
+
+seoul_migration_population_history <- seoul_migration_population_history_raw %>%
+    set_names(c("기간", "이동수"))
+
+## 초등사회탐구4-2시도간인구이동자료(1980-2015)(73쪽).csv
+
+migration_rate_history_raw <- readr::read_csv("inst/extdata/초등사회탐구4-2시도간인구이동자료(1980-2015)(73쪽).csv")
+
+migration_rate_history <- migration_rate_history_raw %>%
+    set_names(c("지역", "1980-1985", "1985-1990", "1990-1995", "1995-2000", "2000-2005", "2005-2010", "2010-2015"))
+
+## 초등사회탐구4-2우리나라농촌변화(79쪽).csv
+
+rural_population_history_raw <- readr::read_csv("inst/extdata/초등사회탐구4-2우리나라농촌변화(79쪽).csv")
+
+rural_population_history <- rural_population_history_raw %>%
+    set_names(c("년도", "인원수"))
+
+## 초등사회탐구4-2우리나라출생아수및65세이상고령자수(98쪽).csv
+
+birth_senior_population_history_raw <- readr::read_csv("inst/extdata/초등사회탐구4-2우리나라출생아수및65세이상고령자수(98쪽).csv")
+
+birth_senior_population_history <- birth_senior_population_history_raw %>%
+    set_names(c("년도", "출생아수", "고령자수"))
+
+## 초등사회탐구4-2우리나라출생아수의변화(1997-2009)(70쪽).csv
+
+birth_population_history_raw <- readr::read_csv("inst/extdata/초등사회탐구4-2우리나라출생아수의변화(1997-2009)(70쪽).csv")
+
+birth_population_history <- birth_population_history_raw %>%
+    set_names(c("년도", "출생아수"))
+
+## 초등사회탐구4-2입양가족수(89쪽).csv
+
+adoptive_family_num_history_raw <- readr::read_csv("inst/extdata/초등사회탐구4-2입양가족수(89쪽).csv")
+
+adoptive_family_num_history <- adoptive_family_num_history_raw %>%
+    set_names(c("년도", "국내", "국외"))
+
+## 초등사회탐구4-2장애인현황(108쪽).csv
+
+disabled_population_raw <- readr::read_csv("inst/extdata/초등사회탐구4-2장애인현황(108쪽).csv")
+
+disabled_population <- disabled_population_raw %>%
+    set_names(c("구분", "인원수"))
+
+## 초등사회탐구4-2지역별인구(70쪽).csv
+
+state_population_raw <- readr::read_csv("inst/extdata/초등사회탐구4-2지역별인구(70쪽).csv")
+
+state_population <- state_population_raw %>%
+    set_names(c("지역", "인구"))
+
+## 초등사회탐구4-2초등학생희망직업(24쪽).csv
+
+elementary_dream_jobs_raw <- readr::read_csv("inst/extdata/초등사회탐구4-2초등학생희망직업(24쪽).csv")
+
+elementary_dream_jobs <- elementary_dream_jobs_raw %>%
+    set_names(c("직업종류", "응답자수"))
+
+## 초등사회탐구4-2촌락과도시의인구변화(1960-2005)(78쪽).csv
+
+rural_urban_population_history_raw <- readr::read_csv("inst/extdata/초등사회탐구4-2촌락과도시의인구변화(1960-2005)(78쪽).csv")
+
+rural_urban_population_history <- rural_urban_population_history_raw %>%
+    set_names(c("년도", "촌락인구", "도시인구"))
+
+## 초등사회탐구4-2출산율국제비교(89쪽).csv
+
+global_birth_rate_raw <- readr::read_csv("inst/extdata/초등사회탐구4-2출산율국제비교(89쪽).csv")
+
+global_birth_rate <- global_birth_rate_raw %>%
+    set_names(c("국가", "출산수"))
+
+## 초등사회탐구4-2특별시광역시의넓이비교(2009년)(70쪽).csv
+
+state_area_raw <- readr::read_csv("inst/extdata/초등사회탐구4-2특별시광역시의넓이비교(2009년)(70쪽).csv")
+
+state_area <- state_area_raw %>%
+    set_names(c("시", "넓이"))
+
+## 초등사회탐구5-2임진왜란전후의인구변화(8쪽).csv
+
+population_before_after_imjin_war_raw <- readr::read_csv("inst/extdata/초등사회탐구5-2임진왜란전후의인구변화(8쪽).csv")
+
+population_before_after_imjin_war <- population_before_after_imjin_war_raw %>%
+    set_names(c("사건", "인구수"))
+
+## 초등사회탐구6-2우리나라13-17대대통령선거투표율(15쪽).csv
+
+voter_turnout_presidential_election_raw <- readr::read_csv("inst/extdata/초등사회탐구6-2우리나라13-17대대통령선거투표율(15쪽).csv")
+
+voter_turnout_presidential_election <- voter_turnout_presidential_election_raw %>%
+    set_names(c("대통령선거", "투표율"))
+
 usethis::use_data(ground_water_temp, overwrite = TRUE)
 usethis::use_data(population_age, overwrite = TRUE)
 usethis::use_data(urbanization, overwrite = TRUE)
@@ -408,3 +520,19 @@ usethis::use_data(students_math_score, overwrite = TRUE)
 
 usethis::use_data(gender, overwrite = TRUE)
 
+usethis::use_data(north_korea_defectors_population, overwrite=TRUE)
+usethis::use_data(employment_by_industry, overwrite=TRUE)
+usethis::use_data(seoul_migration_population_history, overwrite=TRUE)
+usethis::use_data(migration_rate_history, overwrite=TRUE)
+usethis::use_data(rural_population_history, overwrite=TRUE)
+usethis::use_data(birth_senior_population_history, overwrite=TRUE)
+usethis::use_data(birth_population_history, overwrite=TRUE)
+usethis::use_data(adoptive_family_num_history, overwrite=TRUE)
+usethis::use_data(disabled_population_raw, overwrite=TRUE)
+usethis::use_data(state_population, overwrite=TRUE)
+usethis::use_data(elementary_dream_jobs, overwrite=TRUE)
+usethis::use_data(rural_urban_population_history, overwrite=TRUE)
+usethis::use_data(global_birth_rate, overwrite=TRUE)
+usethis::use_data(state_area, overwrite=TRUE)
+usethis::use_data(population_before_after_imjin_war, overwrite=TRUE)
+usethis::use_data(voter_turnout_presidential_election, overwrite=TRUE)
