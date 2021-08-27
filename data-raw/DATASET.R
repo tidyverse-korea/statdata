@@ -2,6 +2,18 @@
 library(tidyverse)
 # fs::dir_create("inst/extdata")
 
+# 0. 전체 데이터 -----
+
+csv_filenames <- fs::dir_ls(path = "inst/extdata/", glob = "*.csv")
+
+openstat_raw <- map(csv_filenames, read_csv)
+
+openstat_tbl <- openstat_raw %>%
+    enframe(name = "name", value = "content") %>%
+    mutate(name = str_remove(name, pattern = "inst/extdata/"))
+
+usethis::use_data(openstat_tbl, overwrite = TRUE)
+
 # 1. 초중등 교과서 데이터셋 ------
 
 ## 025원시_성별.csv
@@ -123,6 +135,13 @@ global_warming_gas_raw <- readr::read_csv("inst/extdata/초등과학6-2지구온
 global_warming_gas <- global_warming_gas_raw %>%
     set_names(c("구분", "함유량"))
 
+## 초등과학6-2지면과수면의온도차이(33쪽).csv
+
+ground_water_temp_raw <- readr::read_csv("inst/extdata/초등과학6-2지면과수면의온도차이(33쪽).csv")
+
+ground_water_temp <- ground_water_temp_raw %>%
+    set_names(c("시각", "지면온도", "수면온도"))
+
 ## 초등수학4-2거실의온도(익힘책116쪽).csv
 livingroom_temps_raw <- readr::read_csv("inst/extdata/초등수학4-2거실의온도(익힘책116쪽).csv")
 
@@ -197,7 +216,7 @@ cosmos_height_change <- cosmos_height_change_raw %>%
 baseball_spectators_num_raw <- readr::read_csv("inst/extdata/초등수학4-2프로야구관중수(익힘책124쪽).csv")
 
 baseball_spectators_num <- baseball_spectators_num_raw %>%
-    set_names(c("일", "관중수"))
+    set_names(c("년", "관중수"))
 
 
 ## 초등수학4-2하루중최고기온(익힘책116쪽).csv
@@ -281,14 +300,7 @@ jinwook_unit_score <- jinwook_unit_score_raw %>%
 students_math_score_raw <- readr::read_csv("inst/extdata/초등수학5-2학생들의수학점수(익힘책104쪽).csv")
 
 students_math_score <- students_math_score_raw %>%
-    set_names("점수")
-
-## 초등과학6-2지면과수면의온도차이(33쪽).csv
-
-ground_water_temp_raw <- readr::read_csv("inst/extdata/초등과학6-2지면과수면의온도차이(33쪽).csv")
-
-ground_water_temp <- ground_water_temp_raw %>%
-    set_names(c("시각", "지면온도", "수면온도"))
+    set_names(c("점수"))
 
 ## 초등사회4-2연령별인구구성비변화(116쪽).csv
 
@@ -465,7 +477,9 @@ voter_turnout_presidential_election_raw <- readr::read_csv("inst/extdata/초등�
 voter_turnout_presidential_election <- voter_turnout_presidential_election_raw %>%
     set_names(c("대통령선거", "투표율"))
 
-usethis::use_data(ground_water_temp, overwrite = TRUE)
+
+# 2. 데이터셋 팩키지 추가 ------
+
 usethis::use_data(population_age, overwrite = TRUE)
 usethis::use_data(urbanization, overwrite = TRUE)
 usethis::use_data(export_amount, overwrite = TRUE)
@@ -493,6 +507,8 @@ usethis::use_data(CO2_emissions, overwrite = TRUE)
 usethis::use_data(ice_melt_color, overwrite = TRUE)
 usethis::use_data(seoul_daegu_temp, overwrite = TRUE)
 usethis::use_data(global_warming_gas, overwrite = TRUE)
+usethis::use_data(ground_water_temp, overwrite = TRUE)
+usethis::use_data(ground_water_temp, overwrite = TRUE)
 
 usethis::use_data(livingroom_temps, overwrite = TRUE)
 usethis::use_data(flower_tree_height, overwrite = TRUE)

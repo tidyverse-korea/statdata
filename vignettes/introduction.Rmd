@@ -3,8 +3,10 @@ title: "introduction"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{introduction}
-  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r, include = FALSE}
@@ -14,7 +16,34 @@ knitr::opts_chunk$set(
 )
 ```
 
+# Setup
+
 ```{r setup}
 library(statdata)
+library(tidyverse)
+```
+
+# Load Data
+
+```{r load-dataset}
+# statdata::openstat_tbl
+openstat_tbl
+```
+
+# Hello World
+
+```{r how-to-use-it}
+
+get_data <- function(pattern = "그림자") {
+    csv_data <- openstat_tbl %>%
+        dplyr::filter(stringr::str_detect(name, pattern)) %>%
+        dplyr::pull(content) %>%
+        .[[1]]
+
+    return(csv_data)
+}
+
+get_data("행성")
+
 ```
 

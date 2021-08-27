@@ -10,6 +10,25 @@
 #' @aliases statdata datadata-package
 NULL
 
+#' openstat_tbl : 초중등 통계 데이터셋
+#'
+#' 초중등 교과서에 언급된 데이터셋 모음.
+#'
+#'
+#' @format 변수 2개와 50행을 갖는 티블 데이터프레임:
+#' @aliases 데이터셋
+#' @docType data
+#' @return \item{openstat_tbl}{티블 데이터프레임}
+#' \describe{
+#'   \item{\code{name}}{character 파일명}
+#'   \item{\code{content}}{tibble 티블 데이터프레임}
+#'}
+#' @details  초중등 교과서에 언급된 데이터셋 모음
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"openstat_tbl"
+
+
 #' shadow_length : 초등과학 3-2
 #'
 #' 초등과학 3-2에 수록된 태양 각도와 그림자 길이에 대한 데이터다.
@@ -515,3 +534,422 @@ NULL
 #' @source \url{http://estat.me/estat/eStat/}
 #' @keywords datasets
 "agro_fishery_in_out"
+
+#' livingroom_temps : 초등수학 4-2
+#'
+#' 초등수학 4-2 교과서에 수록된 거실의 온도 데이터
+#'
+#'
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
+#' @aliases 거실의 온도
+#' @docType data
+#' @return \item{livingroom_temps}{데이터프레임}
+#' \describe{
+#'   \item{\code{시각}}{double 4시부터 9시까지 매시 정각, 단위: 시}
+#'   \item{\code{온도}}{double 매시 정각에 측정한 거실의 온도, 단위: 섭씨}
+#'}
+#' @details  초등수학 4-2 교과서에 수록된 4시부터 9시까지 매시 정각에 측정한 거실의 온도 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"livingroom_temps"
+
+#' flower_tree_height : 초등수학 4-2
+#'
+#' 초등수학 4-2 교과서에 수록된 꽃나무의 키 데이터
+#'
+#'
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
+#' @aliases 꽃나무의 키
+#' @docType data
+#' @return \item{flower_tree_height}{데이터프레임}
+#' \describe{
+#'   \item{\code{월}}{double 3월부터 8월까지, 단위: 월}
+#'   \item{\code{꽃나무키}}{double 지면으로부터 잰 꽃나무의 키, 단위: cm}
+#'}
+#' @details  초등수학 4-2 교과서에 수록된 3월부터 8월까지 매월 잰 꽃나무의 키 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"flower_tree_height"
+
+#' minsu_height : 초등수학 4-2
+#'
+#' 초등수학 4-2 교과서에 수록된 민수의 몸무게 데이터
+#'
+#'
+#' @format 변수 2개와 4행을 갖는 티블 데이터프레임:
+#' @aliases 민수의 몸무게
+#' @docType data
+#' @return \item{minsu_height}{데이터프레임}
+#' \describe{
+#'   \item{\code{학년}}{character 1학년부터 4학년까지}
+#'   \item{\code{몸무게}}{double 민수의 몸무게, 단위: kg}
+#'}
+#' @details  초등수학 4-2 교과서에 수록된 1학년부터 4학년까지 매학년 측정한 민수의 몸무게 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"minsu_height"
+
+#' water_height : 초등수학 4-2
+#'
+#' 초등수학 4-2 교과서에 수록된 수면의 높이 데이터
+#'
+#'
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
+#' @aliases 수면의 높이
+#' @docType data
+#' @return \item{water_height}{데이터프레임}
+#' \describe{
+#'   \item{\code{날짜}}{double 1일부터 6일까지 매일, 단위: 일}
+#'   \item{\code{수면의높이}}{double 매일 측정한 수면의 높이}
+#'}
+#' @details  초등수학 4-2 교과서에 수록된 1일부터 6일까지 매일 측정한 수면의 높이 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"water_height"
+
+#' situp_record : 초등수학 4-2
+#'
+#' 초등수학 4-2 교과서에 수록된 윗몸일으키기 기록 데이터
+#'
+#'
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
+#' @aliases 윗몸일으키기 기록
+#' @docType data
+#' @return \item{situp_record}{데이터프레임}
+#' \describe{
+#'   \item{\code{요일}}{character 월요일부터 토요일까지 매일, 단위: 요일}
+#'   \item{\code{횟수}}{double 윗몸일으키기를 실시한 횟수, 단위: 회}
+#'}
+#' @details  초등수학 4-2 교과서에 수록된 월요일부터 토요일까지 매일 윗몸일으키기를 실시한 횟수 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"situp_record"
+
+#' favorite_folk_game : 초등수학 4-2
+#'
+#' 초등수학 4-2 교과서에 수록된 좋아하는 민속놀이 데이터
+#'
+#'
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
+#' @aliases 좋아하는 민속놀이
+#' @docType data
+#' @return \item{favorite_folk_game}{데이터프레임}
+#' \describe{
+#'   \item{\code{민속놀이종목}}{character 연날리기, 윷놀이 등 민속놀이 종목의 이름}
+#'   \item{\code{학생수}}{double 각 민속놀이를 좋아하는 학생의 수, 단위: 명}
+#'}
+#' @details  초등수학 4-2 교과서에 수록된 연날리기, 윷놀이, 제기차기, 팽이치기, 비사치기를 좋아하는 학생의 수 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"favorite_folk_game"
+
+#' junseong_typing_practice : 초등수학 4-2
+#'
+#' 초등수학 4-2 교과서에 수록된 준성이의 타자연습 데이터
+#'
+#'
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
+#' @aliases 준성이의 타자연습
+#' @docType data
+#' @return \item{junseong_typing_practice}{데이터프레임}
+#' \describe{
+#'   \item{\code{주}}{double 1주차부터 5주차까지 매주, 단위: 주차}
+#'   \item{\code{타수}}{double 준성이의 최고 타수, 단위: 타}
+#'}
+#' @details  초등수학 4-2 교과서에 수록된 1주차부터 5주차까지 매주 기록한 준성이의 최고 타수 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"junseong_typing_practice"
+
+#' area_monthly_precipitation : 초등수학 4-2
+#'
+#' 초등수학 4-2 교과서에 수록된 지역의 월별 강수량 데이터
+#'
+#'
+#' @format 변수 2개와 4행을 갖는 티블 데이터프레임:
+#' @aliases 지역의 월별 강수량
+#' @docType data
+#' @return \item{area_monthly_precipitation}{데이터프레임}
+#' \describe{
+#'   \item{\code{월}}{double 10월부터 1월까지 매달, 단위: 월}
+#'   \item{\code{강수량}}{double 월 평균 강수량}
+#'}
+#' @details  초등수학 4-2 교과서에 수록된 10월부터 1월까지 월 평균 강수량 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"area_monthly_precipitation"
+
+#' hobby_participating_num : 초등수학 4-2
+#'
+#' 초등수학 4-2 교과서에 수록된 취미 종목별 참가 학생 수 데이터
+#'
+#'
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
+#' @aliases 취미 종목별 참가 학생 수
+#' @docType data
+#' @return \item{hobby_participating_num}{데이터프레임}
+#' \describe{
+#'   \item{\code{취미종목}}{character 합창, 연극 등 취미 종목의 이름}
+#'   \item{\code{학생수}}{double 각 취미 종목에 참가한 학생의 수, 단위: 명}
+#'}
+#' @details  초등수학 4-2 교과서에 수록된 합창, 연극, 무용, 기악연주, 장기자랑 취미 종목에 참가한 학생의 수 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"hobby_participating_num"
+
+#' cosmos_height_change : 초등수학 4-2
+#'
+#' 초등수학 4-2 교과서에 수록된 코스모스 키의 변화 데이터
+#'
+#'
+#' @format 변수 2개와 7행을 갖는 티블 데이터프레임:
+#' @aliases 코스모스 키의 변화
+#' @docType data
+#' @return \item{cosmos_height_change}{데이터프레임}
+#' \describe{
+#'   \item{\code{요일}}{character 월요일부터 일요일까지 매일, 단위: 요일}
+#'   \item{\code{키}{double 지면으로부터 잰 코스모스의 키, 단위: cm}
+#'}
+#' @details  초등수학 4-2 교과서에 수록된 월요일부터 일요일까지 매일 잰 코스모스의 키 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"cosmos_height_change"
+
+#' baseball_spectators_num : 초등수학 4-2
+#'
+#' 초등수학 4-2 교과서에 수록된 프로야구 관중 수 데이터
+#'
+#'
+#' @format 변수 2개와 8행을 갖는 티블 데이터프레임:
+#' @aliases 프로야구 관중 수
+#' @docType data
+#' @return \item{baseball_spectators_num}{데이터프레임}
+#' \describe{
+#'   \item{\code{년}}{double 2001년부터 2008년까지 매년, 단위: 년}
+#'   \item{\code{관중수}}{double 한 해동안 프로야구를 보러온 총 관중 수, 단위: 만명}
+#'}
+#' @details  초등수학 4-2 교과서에 수록된 2001년부터 2008년까지 매년 기록된 한 해동안 프로야구를 보러온 총 관중 수 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"baseball_spectators_num"
+
+#' day_highest_temp : 초등수학 4-2
+#'
+#' 초등수학 4-2 교과서에 수록된 하루 중 최고기온 데이터
+#'
+#'
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
+#' @aliases 하루 중 최고기온
+#' @docType data
+#' @return \item{day_highest_temp}{데이터프레임}
+#' \describe{
+#'   \item{\code{날짜}}{double 10일부터 14일까지 매일, 단위: 일}
+#'   \item{\code{최고기온}}{double 하루 중 가장 높았던 기온, 단위: 섭씨}
+#'}
+#' @details  초등수학 4-2 교과서에 수록된 10일부터 14일까지 매일 측정된 하루 중 가장 높았던 기온 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"day_highest_temp"
+
+#' day_lowest_temp : 초등수학 4-2
+#'
+#' 초등수학 4-2 교과서에 수록된 하루 중 최저기온 데이터
+#'
+#'
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
+#' @aliases 하루 중 최저기온
+#' @docType data
+#' @return \item{day_lowest_temp}{데이터프레임}
+#' \describe{
+#'   \item{\code{날짜}}{double 1일부터 6일까지 매일, 단위: 일}
+#'   \item{\code{최고기온}}{double 하루 중 가장 낮았던 기온, 단위: 섭씨}
+#'}
+#' @details  초등수학 4-2 교과서에 수록된 1일부터 6일까지 매일 측정된 하루 중 가장 낮았던 기온 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"day_lowest_temp"
+
+#' students_weight : 초등수학 4-2
+#'
+#' 초등수학 4-2 교과서에 수록된 학생들 몸무게 데이터
+#'
+#'
+#' @format 변수 2개와 8행을 갖는 티블 데이터프레임:
+#' @aliases 학생들 몸무게
+#' @docType data
+#' @return \item{students_weight}{데이터프레임}
+#' \describe{
+#'   \item{\code{이름}}{character 학생들의 이름}
+#'   \item{\code{몸무게}}{double 학생들의 몸무게, 단위: kg}
+#'}
+#' @details  초등수학 4-2 교과서에 수록된 8명의 학생들의 몸무게 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"students_weight"
+
+#' students_height : 초등수학 4-2
+#'
+#' 초등수학 4-2 교과서에 수록된 학생들 키 데이터
+#'
+#'
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
+#' @aliases 학생들 키
+#' @docType data
+#' @return \item{students_height}{데이터프레임}
+#' \describe{
+#'   \item{\code{이름}}{character 학생들의 이름}
+#'   \item{\code{키}}{double 학생들의 키, 단위: cm}
+#'}
+#' @details  초등수학 4-2 교과서에 수록된 6명의 학생들의 키 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"students_height"
+
+#' country_urbanization_rate : 초등수학 5-2
+#'
+#' 초등수학 5-2 교과서에 수록된 국가별 도시화율 변화 데이터
+#'
+#'
+#' @format 변수 5개와 8행을 갖는 티블 데이터프레임:
+#' @aliases 국가별 도시화율 변화
+#' @docType data
+#' @return \item{country_urbanization_rate}{데이터프레임}
+#' \describe{
+#'   \item{\code{년도}}{double 1985년부터 2015년까지 5년 주기, 단위: 년}
+#'   \item{\code{한국}}{double 한국의 도시화율, 단위: %}
+#'   \item{\code{일본}}{double 일본의 도시화율, 단위: %}
+#'   \item{\code{중국}}{double 중국의 도시화율, 단위: %}
+#'   \item{\code{미국}}{double 미국의 도시화율, 단위: %}
+#'}
+#' @details  초등수학 5-2 교과서에 수록된 1985년부터 2015년까지 5년 주기로 측정한 한국, 일본, 중국, 미국의 도시화율 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"country_urbanization_rate"
+
+#' farming_num : 초등수학 5-2
+#'
+#' 초등수학 5-2 교과서에 수록된 농사짓는 가구수 데이터
+#'
+#'
+#' @format 변수 2개와 4행을 갖는 티블 데이터프레임:
+#' @aliases 농사짓는 가구수
+#' @docType data
+#' @return \item{farming_num}{데이터프레임}
+#' \describe{
+#'   \item{\code{연도}}{double 1967년부터 1997년까지 10년 주기, 단위: 년}
+#'   \item{\code{가구수}}{double 농사짓는 가구의 수, 단위: 가구}
+#'}
+#' @details  초등수학 5-2 교과서에 수록된 1967년부터 1997년까지 10년 주기로 측정한 농사짓는 가구의 수 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"farming_num"
+
+#' expt_data_salt_hour : 초등수학 5-2
+#'
+#' 초등수학 5-2 교과서에 수록된 시간별 소금양에 따른 실험자료 데이터
+#'
+#'
+#' @format 변수 6개와 6행을 갖는 티블 데이터프레임:
+#' @aliases 시간별 소금양에 따른 실험자료
+#' @docType data
+#' @return \item{expt_data_salt_hour}{데이터프레임}
+#' \describe{
+#'   \item{\code{구분}}{character 경과된 날짜, 단위: 일}
+#'   \item{\code{소금0g}}{double 소금이 0g일 때 경과된 날짜에 따른 데이터}
+#'   \item{\code{소금10g}}{double 소금이 10g일 때 경과된 날짜에 따른 데이터}
+#'   \item{\code{소금20g}}{double 소금이 20g일 때 경과된 날짜에 따른 데이터}
+#'   \item{\code{소금30g}}{double 소금이 30g일 때 경과된 날짜에 따른 데이터}
+#'   \item{\code{소금40g}}{double 소금이 40g일 때 경과된 날짜에 따른 데이터}
+#'}
+#' @details  초등수학 5-2 교과서에 수록된 경과된 날짜와 소금의 양에 따른 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"expt_data_salt_hour"
+
+#' newborn_num : 초등수학 5-2
+#'
+#' 초등수학 5-2 교과서에 수록된 신생아수 데이터
+#'
+#'
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
+#' @aliases 신생아수
+#' @docType data
+#' @return \item{newborn_num}{데이터프레임}
+#' \describe{
+#'   \item{\code{연도}}{double 2000년부터 2008년까지 2년 주기, 단위: 년}
+#'   \item{\code{신생아수}}{double 한 해 동안 태어난 신생아의 수, 단위: 명}
+#'}
+#' @details  초등수학 5-2 교과서에 수록된 2000년부터 2008년까지 2년 주기로 측정된 한 해 동안 태어난 신생아의 수 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"newborn_num"
+
+#' counseling_user_num : 초등수학 5-2
+#'
+#' 초등수학 5-2 교과서에 수록된 월별 상담실 이용자수 데이터
+#'
+#'
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
+#' @aliases 월별 상담실 이용자수
+#' @docType data
+#' @return \item{counseling_user_num}{데이터프레임}
+#' \describe{
+#'   \item{\code{월}}{double 6월부터 10월까지 매월, 단위: 월}
+#'   \item{\code{이용자}}{double 상담실을 이용한 사람의 수, 단위: 명}
+#'}
+#' @details  초등수학 5-2 교과서에 수록된 6월부터 10월까지 매월 상담실을 이용한 사람의 수 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"counseling_user_num"
+
+#' kicks_num : 초등수학 5-2
+#'
+#' 초등수학 5-2 교과서에 수록된 제기차기 횟수 데이터
+#'
+#'
+#' @format 변수 1개와 30행을 갖는 티블 데이터프레임:
+#' @aliases 제기차기 횟수
+#' @docType data
+#' @return \item{kicks_num}{데이터프레임}
+#' \describe{
+#'   \item{\code{횟수}}{double 제기차기 횟수}
+#'}
+#' @details  초등수학 5-2 교과서에 수록된 제기차기 횟수 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"kicks_num"
+
+#' jinwook_unit_score : 초등수학 5-2
+#'
+#' 초등수학 5-2 교과서에 수록된 진욱이의 단원평가 점수 데이터
+#'
+#'
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
+#' @aliases 진욱이의 단원평가 점수
+#' @docType data
+#' @return \item{jinwook_unit_score}{데이터프레임}
+#' \describe{
+#'   \item{\code{단원}}{character 1단원부터 5단원까지}
+#'   \item{\code{점수}}{double 진욱이의 단원평가 점수, 단위: 점}
+#'}
+#' @details  초등수학 5-2 교과서에 수록된 1단원부터 5단원까지 각 단원에 대한 진욱이의 단원평가 점수 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"jinwook_unit_score"
+
+#' students_math_score : 초등수학 5-2
+#'
+#' 초등수학 5-2 교과서에 수록된 학생들의 수학 점수 데이터
+#'
+#'
+#' @format 변수 1개와 40행을 갖는 티블 데이터프레임:
+#' @aliases 학생들의 수학 점수
+#' @docType data
+#' @return \item{students_math_score}{데이터프레임}
+#' \describe{
+#'   \item{\code{점수}}{double 학생들의 수학 점수}
+#'}
+#' @details  초등수학 5-2 교과서에 수록된 학생들의 수학 점수 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"students_math_score"
