@@ -17,7 +17,7 @@ get_rawdata(dest_dir = "inst/extdata")
 }
 \examples{
 \dontrun{
-# 현재 작업 경로에 데이터 파일을 복사한다.
+# `inst/extdata` 디렉토리 경로에 데이터 파일을 복사한다.
 get_rawdata()
 
 # c:/temp에 선택한 데이터 파일을 복사한다.

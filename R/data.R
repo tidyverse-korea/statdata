@@ -15,10 +15,9 @@ NULL
 #' 초중등 교과서에 언급된 데이터셋 모음.
 #'
 #'
-#' @format 변수 2개와 50행을 갖는 티블 데이터프레임:
 #' @aliases 데이터셋
 #' @docType data
-#' @return \item{openstat_tbl}{티블 데이터프레임}
+#' @format 변수 2개와 50행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{name}}{character 파일명}
 #'   \item{\code{content}}{tibble 티블 데이터프레임}
@@ -34,10 +33,9 @@ NULL
 #' 초등과학 3-2에 수록된 태양 각도와 그림자 길이에 대한 데이터다.
 #'
 #'
-#' @format 변수 2개와 7행을 갖는 티블 데이터프레임:
 #' @aliases 그림자길이
 #' @docType data
-#' @return \item{shadow_length}{데이터프레임}
+#' @format 변수 2개와 7행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{각도}}{double 지면에 세운 막대기와 태양과의 각도, 단위: 도}
 #'   \item{\code{길이}}{double 막대기의 그림자 길이, 단위: cm}
@@ -52,10 +50,9 @@ NULL
 #' 초등과학 3-2 교과서에 수록된 우리나라 해역 오염실태자료 데이터다.
 #'
 #'
-#' @format 변수 3개와 16행을 갖는 티블 데이터프레임:
 #' @aliases 해역오염실태자료
 #' @docType data
-#' @return \item{sea_pollution}{데이터프레임}
+#' @format 변수 3개와 16행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{연도}}{double 1993년부터 2008년까지 해역 오염실태 조사 연도}
 #'   \item{\code{건수}}{double 해역 오염 건수}
@@ -71,10 +68,9 @@ NULL
 #' 초등과학 5-2 교과서에 수록된 지구를 1로 뒀을 때 행성의 반지름 데이터
 #'
 #'
-#' @format 변수 2개와 9행을 갖는 티블 데이터프레임:
 #' @aliases 행성반지름
 #' @docType data
-#' @return \item{planet_radius}{데이터프레임}
+#' @format 변수 2개와 9행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{행성이름}}{character 태양계 존재하는 행성 이름}
 #'   \item{\code{반지름}}{double 지구를 1로 뒀을 때 행성의 반지름}
@@ -89,10 +85,9 @@ NULL
 #' 초등 남성과 여성 원시 데이터
 #'
 #'
-#' @format 변수 1개와 10행을 갖는 티블 데이터프레임:
 #' @aliases 성별
 #' @docType data
-#' @return \item{gender}{데이터프레임}
+#' @format 변수 1개와 10행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{성별}}{character 남, 여 두 값중 하나를 갖는 성별}
 #'}
@@ -106,10 +101,9 @@ NULL
 #' 초등과학 5-2 교과서에 수록된 거리-시간 그래프 데이터
 #'
 #'
-#' @format 변수 2개와 7행을 갖는 티블 데이터프레임:
 #' @aliases 거리-시간 그래프
 #' @docType data
-#' @return \item{distance_time_graph}{데이터프레임}
+#' @format 변수 2개와 7행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{거리}}{double 거리, 단위: cm}
 #'   \item{\code{시간}}{double 거리에 따른 시간, 단위: 초}
@@ -124,10 +118,9 @@ NULL
 #' 초등과학 5-2 교과서에 수록된 교통수단 데이터
 #'
 #'
-#' @format 변수 2개와 4행을 갖는 티블 데이터프레임:
 #' @aliases 교통수단
 #' @docType data
-#' @return \item{transportation}{데이터프레임}
+#' @format 변수 2개와 4행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{교통수단}}{character 자전거, 자동차, 배, 기차 중 하나의 교통수단}
 #'   \item{\code{이동거리}}{double 교통수단에 따른 이동거리, 단위: km}
@@ -142,10 +135,9 @@ NULL
 #' 초등과학 5-2 교과서에 수록된 달리기 기록 데이터
 #'
 #'
-#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' @aliases 달리기 기록
 #' @docType data
-#' @return \item{running_record}{데이터프레임}
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{레인}}{double 1부터 6까지 레인의 번호}
 #'   \item{\code{걸린시간}}{double 달리기에 걸린 시간, 단위: 초}
@@ -160,10 +152,9 @@ NULL
 #' 초등과학 5-2 교과서에 수록된 물의 온도와 물기둥 높이 데이터
 #'
 #'
-#' @format 변수 4개와 4행을 갖는 티블 데이터프레임:
 #' @aliases 물의 온도와 물기둥 높이
 #' @docType data
-#' @return \item{water_temp_height}{데이터프레임}
+#' @format 변수 4개와 4행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{물의온도}}{double 물의 온도, 단위: 섭씨}
 #'   \item{\code{물기둥높이1회}}{double 첫 번째로 측정한 물의 온도에 따른 물기둥 높이}
@@ -180,10 +171,9 @@ NULL
 #' 초등과학 5-2 교과서에 수록된 물의 온도와 붕산 녹는양 데이터
 #'
 #'
-#' @format 변수 2개와 4행을 갖는 티블 데이터프레임:
 #' @aliases 물의 온도와 붕산 녹는양
 #' @docType data
-#' @return \item{water_temp_boric_acid}{데이터프레임}
+#' @format 변수 2개와 4행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{물의온도}}{double 물의 온도, 단위: 섭씨}
 #'   \item{\code{붕산녹는양}}{double 물의 온도에 따른 붕산이 녹는양, 단위: g}
@@ -198,10 +188,9 @@ NULL
 #' 초등과학 5-2 교과서에 수록된 물의 온도와 액체기둥 높이 데이터
 #'
 #'
-#' @format 변수 4개와 4행을 갖는 티블 데이터프레임:
 #' @aliases 물의 온도와 액체기둥 높이
 #' @docType data
-#' @return \item{water_temp_liquid_height}{데이터프레임}
+#' @format 변수 4개와 4행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{물온도}}{double 물의 온도, 단위: 섭씨}
 #'   \item{\code{식초기둥높이}}{double 물의 온도에 따른 식초기둥 높이}
@@ -218,10 +207,9 @@ NULL
 #' 초등과학 5-2 교과서에 수록된 탐구결과 데이터
 #'
 #'
-#' @format 변수 6개와 6행을 갖는 티블 데이터프레임:
 #' @aliases 탐구결과
 #' @docType data
-#' @return \item{search_result}{데이터프레임}
+#' @format 변수 6개와 6행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{구분}}{character 경과된 날짜, 단위: 일}
 #'   \item{\code{소금0g}}{double 소금이 0g일 때 경과된 날짜에 따른 데이터}
@@ -240,10 +228,9 @@ NULL
 #' 초등과학 5-2 교과서에 수록된 태양계에서 행성까지의 상대적 거리 데이터
 #'
 #'
-#' @format 변수 2개와 8행을 갖는 티블 데이터프레임:
 #' @aliases 행성의 상대적 거리
 #' @docType data
-#' @return \item{planet_distance}{데이터프레임}
+#' @format 변수 2개와 8행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{명칭}}{character 태양계 존재하는 행성 이름}
 #'   \item{\code{거리}}{double 지구를 1로 뒀을 때 행성까지의 거리}
@@ -258,10 +245,9 @@ NULL
 #' 초등과학 6-2 교과서에 수록된 공기 중에 포함된 여러가지 기체 데이터
 #'
 #'
-#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' @aliases 공기 중에 포함된 여러가지 기체
 #' @docType data
-#' @return \item{gas_in_air}{데이터프레임}
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{구분}}{character 공기 중에 포함된 기체의 종류}
 #'   \item{\code{함유량}}{double 공기 중에 포함된 양, 단위: %}
@@ -276,10 +262,9 @@ NULL
 #' 2009개정 초등과학 6-2 교과서에 수록된 국가별 이산화탄소 배출량 데이터
 #'
 #'
-#' @format 변수 4개와 10행을 갖는 티블 데이터프레임:
 #' @aliases 국가별 이산화탄소 배출량
 #' @docType data
-#' @return \item{CO2_emissions}{데이터프레임}
+#' @format 변수 4개와 10행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{국가}}{character 대한민국, 중국, 미국 등 10개 국가의 이름}
 #'   \item{\code{이산화탄소배출량}}{double 국가별 이산화탄소 배출량}
@@ -296,10 +281,9 @@ NULL
 #' 초등과학 6-2 교과서에 수록된 색소의 색깔에 따라 얼음이 녹은양 데이터
 #'
 #'
-#' @format 변수 2개와 8행을 갖는 티블 데이터프레임:
 #' @aliases 색소의 색깔에 따라 얼음이 녹은양
 #' @docType data
-#' @return \item{ice_melt_color}{데이터프레임}
+#' @format 변수 2개와 8행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{얼음색깔}}{character 얼음의 색깔}
 #'   \item{\code{녹은양}}{double 일정 시간 후 얼음이 녹은양}
@@ -314,10 +298,9 @@ NULL
 #' 초등과학 6-2 교과서에 수록된 서울과 대구의 기온변화 데이터
 #'
 #'
-#' @format 변수 3개와 24행을 갖는 티블 데이터프레임:
 #' @aliases 서울과 대구의 기온변화
 #' @docType data
-#' @return \item{seoul_daegu_temp}{데이터프레임}
+#' @format 변수 3개와 24행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{시각}}{character 01시부터 24시까지 매시 정각}
 #'   \item{\code{서울}}{double 매시 정각 서울의 기온, 단위: 섭씨}
@@ -333,10 +316,9 @@ NULL
 #' 초등과학 6-2 교과서에 수록된 지구온난화의 원인 기체 데이터
 #'
 #'
-#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' @aliases 지구온난화의 원인 기체
 #' @docType data
-#' @return \item{global_warming_gas}{데이터프레임}
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{구분}}{character 지구온난화의 원인이 되는 기체의 종류}
 #'   \item{\code{함유량}}{double 지구온난화에 영향을 주는 정도, 단위: %}
@@ -351,10 +333,9 @@ NULL
 #' 초등과학 6-2 교과서에 수록된 지면과 수면의 온도 차이 데이터
 #'
 #'
-#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' @aliases 지면과 수면의 온도 차이
 #' @docType data
-#' @return \item{ground_water_temp}{데이터프레임}
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{시각}}{double 08시부터 다음날 07시까지 매시 정각}
 #'   \item{\code{지면온도}}{double 매시 정각 지면의 온도, 단위: 섭씨}
@@ -370,10 +351,9 @@ NULL
 #' 초등사회 4-2 교과서에 수록된 연령별 인구 구성비 변화 데이터
 #'
 #'
-#' @format 변수 4개와 9행을 갖는 티블 데이터프레임:
 #' @aliases 연령별 인구 구성비
+#' @format 변수 4개와 9행을 갖는 티블 데이터프레임:
 #' @docType data
-#' @return \item{population_age}{데이터프레임}
 #' \describe{
 #'   \item{\code{연도}}{double 1970년부터 2050년까지 10년 주기, 단위: 년}
 #'   \item{\code{0~14세}}{double 0~14세가 차지하는 인구 구성 비율, 단위: %}
@@ -390,10 +370,9 @@ NULL
 #' 초등사회 5-2 교과서에 수록된 국가별 도시화율 변화 데이터
 #'
 #'
-#' @format 변수 5개와 8행을 갖는 티블 데이터프레임:
 #' @aliases 국가별 도시화율
 #' @docType data
-#' @return \item{urbanization}{데이터프레임}
+#' @format 변수 5개와 8행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{년도}}{double 1985년부터 2015년까지 5년 주기, 단위: 년}
 #'   \item{\code{한국}}{double 한국의 도시화율, 단위: %}
@@ -411,10 +390,9 @@ NULL
 #' 초등사회 5-2 교과서에 수록된 대한민국 수출액 데이터
 #'
 #'
-#' @format 변수 2개와 11행을 갖는 티블 데이터프레임:
 #' @aliases 대한민국 수출액
 #' @docType data
-#' @return \item{export_amount}{데이터프레임}
+#' @format 변수 2개와 11행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{연도}}{double 1960년부터 2010년까지 5년 주기, 단위: 년}
 #'   \item{\code{수출액}}{double 대한민국이 해외에 수출한 금액, 단위: 억 달러}
@@ -429,10 +407,9 @@ NULL
 #' 초등사회 5-2 교과서에 수록된 일제시대 1인당 쌀 소비량 데이터
 #'
 #'
-#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' @aliases 일제시대 1인당 쌀 소비량
 #' @docType data
-#' @return \item{rice_consumption_person}{데이터프레임}
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{연도}}{character 1920년부터 1930년까지 2년 주기}
 #'   \item{\code{1인당소비량}}{double 1인당 소비한 쌀의 양}
@@ -447,10 +424,9 @@ NULL
 #' 초등사회 5-2 교과서에 수록된 일제시대 쌀 생산량과 수탈량 자료 데이터
 #'
 #'
-#' @format 변수 3개와 6행을 갖는 티블 데이터프레임:
 #' @aliases 일제시대 쌀 생산량과 수탈량
 #' @docType data
-#' @return \item{rice_produced_taken}{데이터프레임}
+#' @format 변수 3개와 6행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{연도}}{character 1920년부터 1930년까지 2년 주기}
 #'   \item{\code{쌀생산량}}{double 생산한 쌀의 양}
@@ -466,10 +442,9 @@ NULL
 #' 초등사회 5-2 교과서에 수록된 초고속 인터넷 가입자수 데이터
 #'
 #'
-#' @format 변수 2개와 10행을 갖는 티블 데이터프레임:
 #' @aliases 초고속 인터넷 가입자수
 #' @docType data
-#' @return \item{high_speed_internet}{데이터프레임}
+#' @format 변수 2개와 10행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{연도}}{character 1998년부터 2009년까지, 단위: 년}
 #'   \item{\code{가입자수}}{double 초고속 인터넷에 가입한 사람의 수, 단위: 명}
@@ -484,10 +459,9 @@ NULL
 #' 초등사회 6-2 교과서에 수록된 개인정보침해 신고건수 데이터
 #'
 #'
-#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' @aliases 개인정보침해 신고건수
 #' @docType data
-#' @return \item{privacy_infringement}{데이터프레임}
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{년도}}{character 2004년부터 2008년까지, 단위: 년}
 #'   \item{\code{건수}}{double 개인정보침해 신고가 접수된 건수, 단위: 건}
@@ -502,10 +476,9 @@ NULL
 #' 초등사회 6-2 교과서에 수록된 쌀 소비량 국제 비교 데이터
 #'
 #'
-#' @format 변수 3개와 3행을 갖는 티블 데이터프레임:
 #' @aliases 쌀 소비량 국제 비교
 #' @docType data
-#' @return \item{rice_consumption_world}{데이터프레임}
+#' @format 변수 3개와 3행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{국가}}{character 국가의 이름: 대한민국, 일본, 타이완}
 #'   \item{\code{1999}}{double 1999년의 쌀 소비량}
@@ -521,10 +494,9 @@ NULL
 #' 초등사회 6-2 교과서에 수록된 우리나라 농수산물의 수입과 수출 현황 데이터
 #'
 #'
-#' @format 변수 3개와 5행을 갖는 티블 데이터프레임:
 #' @aliases 우리나라 농수산물의 수입과 수출 현황
 #' @docType data
-#' @return \item{agro_fishery_in_out}{데이터프레임}
+#' @format 변수 3개와 5행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{년도}}{character 2005년부터 2009년까지, 단위: 년}
 #'   \item{\code{수입액}}{double 농수산물을 수입한 금액}
@@ -540,10 +512,9 @@ NULL
 #' 초등수학 4-2 교과서에 수록된 거실의 온도 데이터
 #'
 #'
-#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' @aliases 거실의 온도
 #' @docType data
-#' @return \item{livingroom_temps}{데이터프레임}
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{시각}}{double 4시부터 9시까지 매시 정각, 단위: 시}
 #'   \item{\code{온도}}{double 매시 정각에 측정한 거실의 온도, 단위: 섭씨}
@@ -558,10 +529,9 @@ NULL
 #' 초등수학 4-2 교과서에 수록된 꽃나무의 키 데이터
 #'
 #'
-#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' @aliases 꽃나무의 키
 #' @docType data
-#' @return \item{flower_tree_height}{데이터프레임}
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{월}}{double 3월부터 8월까지, 단위: 월}
 #'   \item{\code{꽃나무키}}{double 지면으로부터 잰 꽃나무의 키, 단위: cm}
@@ -576,10 +546,9 @@ NULL
 #' 초등수학 4-2 교과서에 수록된 민수의 몸무게 데이터
 #'
 #'
-#' @format 변수 2개와 4행을 갖는 티블 데이터프레임:
 #' @aliases 민수의 몸무게
 #' @docType data
-#' @return \item{minsu_height}{데이터프레임}
+#' @format 변수 2개와 4행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{학년}}{character 1학년부터 4학년까지}
 #'   \item{\code{몸무게}}{double 민수의 몸무게, 단위: kg}
@@ -594,10 +563,9 @@ NULL
 #' 초등수학 4-2 교과서에 수록된 수면의 높이 데이터
 #'
 #'
-#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' @aliases 수면의 높이
 #' @docType data
-#' @return \item{water_height}{데이터프레임}
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{날짜}}{double 1일부터 6일까지 매일, 단위: 일}
 #'   \item{\code{수면의높이}}{double 매일 측정한 수면의 높이}
@@ -612,10 +580,9 @@ NULL
 #' 초등수학 4-2 교과서에 수록된 윗몸일으키기 기록 데이터
 #'
 #'
-#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' @aliases 윗몸일으키기 기록
 #' @docType data
-#' @return \item{situp_record}{데이터프레임}
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{요일}}{character 월요일부터 토요일까지 매일, 단위: 요일}
 #'   \item{\code{횟수}}{double 윗몸일으키기를 실시한 횟수, 단위: 회}
@@ -630,10 +597,9 @@ NULL
 #' 초등수학 4-2 교과서에 수록된 좋아하는 민속놀이 데이터
 #'
 #'
-#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' @aliases 좋아하는 민속놀이
 #' @docType data
-#' @return \item{favorite_folk_game}{데이터프레임}
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{민속놀이종목}}{character 연날리기, 윷놀이 등 민속놀이 종목의 이름}
 #'   \item{\code{학생수}}{double 각 민속놀이를 좋아하는 학생의 수, 단위: 명}
@@ -648,10 +614,9 @@ NULL
 #' 초등수학 4-2 교과서에 수록된 준성이의 타자연습 데이터
 #'
 #'
-#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' @aliases 준성이의 타자연습
 #' @docType data
-#' @return \item{junseong_typing_practice}{데이터프레임}
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{주}}{double 1주차부터 5주차까지 매주, 단위: 주차}
 #'   \item{\code{타수}}{double 준성이의 최고 타수, 단위: 타}
@@ -666,10 +631,9 @@ NULL
 #' 초등수학 4-2 교과서에 수록된 지역의 월별 강수량 데이터
 #'
 #'
-#' @format 변수 2개와 4행을 갖는 티블 데이터프레임:
 #' @aliases 지역의 월별 강수량
 #' @docType data
-#' @return \item{area_monthly_precipitation}{데이터프레임}
+#' @format 변수 2개와 4행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{월}}{double 10월부터 1월까지 매달, 단위: 월}
 #'   \item{\code{강수량}}{double 월 평균 강수량}
@@ -684,10 +648,9 @@ NULL
 #' 초등수학 4-2 교과서에 수록된 취미 종목별 참가 학생 수 데이터
 #'
 #'
-#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' @aliases 취미 종목별 참가 학생 수
 #' @docType data
-#' @return \item{hobby_participating_num}{데이터프레임}
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{취미종목}}{character 합창, 연극 등 취미 종목의 이름}
 #'   \item{\code{학생수}}{double 각 취미 종목에 참가한 학생의 수, 단위: 명}
@@ -702,10 +665,9 @@ NULL
 #' 초등수학 4-2 교과서에 수록된 코스모스 키의 변화 데이터
 #'
 #'
-#' @format 변수 2개와 7행을 갖는 티블 데이터프레임:
 #' @aliases 코스모스 키의 변화
 #' @docType data
-#' @return \item{cosmos_height_change}{데이터프레임}
+#' @format 변수 2개와 7행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{요일}}{character 월요일부터 일요일까지 매일, 단위: 요일}
 #'   \item{\code{키}{double 지면으로부터 잰 코스모스의 키, 단위: cm}
@@ -720,10 +682,9 @@ NULL
 #' 초등수학 4-2 교과서에 수록된 프로야구 관중 수 데이터
 #'
 #'
-#' @format 변수 2개와 8행을 갖는 티블 데이터프레임:
 #' @aliases 프로야구 관중 수
 #' @docType data
-#' @return \item{baseball_spectators_num}{데이터프레임}
+#' @format 변수 2개와 8행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{년}}{double 2001년부터 2008년까지 매년, 단위: 년}
 #'   \item{\code{관중수}}{double 한 해동안 프로야구를 보러온 총 관중 수, 단위: 만명}
@@ -738,10 +699,9 @@ NULL
 #' 초등수학 4-2 교과서에 수록된 하루 중 최고기온 데이터
 #'
 #'
-#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' @aliases 하루 중 최고기온
 #' @docType data
-#' @return \item{day_highest_temp}{데이터프레임}
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{날짜}}{double 10일부터 14일까지 매일, 단위: 일}
 #'   \item{\code{최고기온}}{double 하루 중 가장 높았던 기온, 단위: 섭씨}
@@ -756,10 +716,9 @@ NULL
 #' 초등수학 4-2 교과서에 수록된 하루 중 최저기온 데이터
 #'
 #'
-#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' @aliases 하루 중 최저기온
 #' @docType data
-#' @return \item{day_lowest_temp}{데이터프레임}
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{날짜}}{double 1일부터 6일까지 매일, 단위: 일}
 #'   \item{\code{최고기온}}{double 하루 중 가장 낮았던 기온, 단위: 섭씨}
@@ -774,10 +733,9 @@ NULL
 #' 초등수학 4-2 교과서에 수록된 학생들 몸무게 데이터
 #'
 #'
-#' @format 변수 2개와 8행을 갖는 티블 데이터프레임:
 #' @aliases 학생들 몸무게
 #' @docType data
-#' @return \item{students_weight}{데이터프레임}
+#' @format 변수 2개와 8행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{이름}}{character 학생들의 이름}
 #'   \item{\code{몸무게}}{double 학생들의 몸무게, 단위: kg}
@@ -792,10 +750,9 @@ NULL
 #' 초등수학 4-2 교과서에 수록된 학생들 키 데이터
 #'
 #'
-#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' @aliases 학생들 키
 #' @docType data
-#' @return \item{students_height}{데이터프레임}
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{이름}}{character 학생들의 이름}
 #'   \item{\code{키}}{double 학생들의 키, 단위: cm}
@@ -810,10 +767,9 @@ NULL
 #' 초등수학 5-2 교과서에 수록된 국가별 도시화율 변화 데이터
 #'
 #'
-#' @format 변수 5개와 8행을 갖는 티블 데이터프레임:
 #' @aliases 국가별 도시화율 변화
 #' @docType data
-#' @return \item{country_urbanization_rate}{데이터프레임}
+#' @format 변수 5개와 8행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{년도}}{double 1985년부터 2015년까지 5년 주기, 단위: 년}
 #'   \item{\code{한국}}{double 한국의 도시화율, 단위: %}
@@ -831,10 +787,9 @@ NULL
 #' 초등수학 5-2 교과서에 수록된 농사짓는 가구수 데이터
 #'
 #'
-#' @format 변수 2개와 4행을 갖는 티블 데이터프레임:
 #' @aliases 농사짓는 가구수
 #' @docType data
-#' @return \item{farming_num}{데이터프레임}
+#' @format 변수 2개와 4행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{연도}}{double 1967년부터 1997년까지 10년 주기, 단위: 년}
 #'   \item{\code{가구수}}{double 농사짓는 가구의 수, 단위: 가구}
@@ -849,10 +804,9 @@ NULL
 #' 초등수학 5-2 교과서에 수록된 시간별 소금양에 따른 실험자료 데이터
 #'
 #'
-#' @format 변수 6개와 6행을 갖는 티블 데이터프레임:
 #' @aliases 시간별 소금양에 따른 실험자료
 #' @docType data
-#' @return \item{expt_data_salt_hour}{데이터프레임}
+#' @format 변수 6개와 6행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{구분}}{character 경과된 날짜, 단위: 일}
 #'   \item{\code{소금0g}}{double 소금이 0g일 때 경과된 날짜에 따른 데이터}
@@ -871,10 +825,9 @@ NULL
 #' 초등수학 5-2 교과서에 수록된 신생아수 데이터
 #'
 #'
-#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' @aliases 신생아수
 #' @docType data
-#' @return \item{newborn_num}{데이터프레임}
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{연도}}{double 2000년부터 2008년까지 2년 주기, 단위: 년}
 #'   \item{\code{신생아수}}{double 한 해 동안 태어난 신생아의 수, 단위: 명}
@@ -889,10 +842,9 @@ NULL
 #' 초등수학 5-2 교과서에 수록된 월별 상담실 이용자수 데이터
 #'
 #'
-#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' @aliases 월별 상담실 이용자수
 #' @docType data
-#' @return \item{counseling_user_num}{데이터프레임}
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{월}}{double 6월부터 10월까지 매월, 단위: 월}
 #'   \item{\code{이용자}}{double 상담실을 이용한 사람의 수, 단위: 명}
@@ -907,10 +859,9 @@ NULL
 #' 초등수학 5-2 교과서에 수록된 제기차기 횟수 데이터
 #'
 #'
-#' @format 변수 1개와 30행을 갖는 티블 데이터프레임:
 #' @aliases 제기차기 횟수
 #' @docType data
-#' @return \item{kicks_num}{데이터프레임}
+#' @format 변수 1개와 30행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{횟수}}{double 제기차기 횟수}
 #'}
@@ -924,10 +875,9 @@ NULL
 #' 초등수학 5-2 교과서에 수록된 진욱이의 단원평가 점수 데이터
 #'
 #'
-#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' @aliases 진욱이의 단원평가 점수
 #' @docType data
-#' @return \item{jinwook_unit_score}{데이터프레임}
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{단원}}{character 1단원부터 5단원까지}
 #'   \item{\code{점수}}{double 진욱이의 단원평가 점수, 단위: 점}
@@ -942,10 +892,9 @@ NULL
 #' 초등수학 5-2 교과서에 수록된 학생들의 수학 점수 데이터
 #'
 #'
-#' @format 변수 1개와 40행을 갖는 티블 데이터프레임:
 #' @aliases 학생들의 수학 점수
 #' @docType data
-#' @return \item{students_math_score}{데이터프레임}
+#' @format 변수 1개와 40행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{점수}}{double 학생들의 수학 점수}
 #'}
