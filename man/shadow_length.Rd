@@ -7,19 +7,16 @@
 \title{shadow_length : 초등과학 3-2}
 \format{
 변수 2개와 7행을 갖는 티블 데이터프레임:
+\describe{
+  \item{\code{각도}}{double 지면에 세운 막대기와 태양과의 각도, 단위: 도}
+  \item{\code{길이}}{double 막대기의 그림자 길이, 단위: cm}
+}
 }
 \source{
 \url{http://estat.me/estat/eStat/}
 }
 \usage{
 shadow_length
-}
-\value{
-\item{shadow_length}{데이터프레임}
-\describe{
-  \item{\code{각도}}{double 지면에 세운 막대기와 태양과의 각도, 단위: 도}
-  \item{\code{길이}}{double 막대기의 그림자 길이, 단위: cm}
-}
 }
 \description{
 초등과학 3-2에 수록된 태양 각도와 그림자 길이에 대한 데이터다.

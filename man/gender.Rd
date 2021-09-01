@@ -7,18 +7,15 @@
 \title{gender : 원시}
 \format{
 변수 1개와 10행을 갖는 티블 데이터프레임:
+\describe{
+  \item{\code{성별}}{character 남, 여 두 값중 하나를 갖는 성별}
+}
 }
 \source{
 \url{http://estat.me/estat/eStat/}
 }
 \usage{
 gender
-}
-\value{
-\item{gender}{데이터프레임}
-\describe{
-  \item{\code{성별}}{character 남, 여 두 값중 하나를 갖는 성별}
-}
 }
 \description{
 초등 남성과 여성 원시 데이터
