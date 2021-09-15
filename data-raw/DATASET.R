@@ -20,12 +20,103 @@ usethis::use_data(openstat_tbl, overwrite = TRUE)
 
 # 1. 초중등 교과서 데이터셋 ------
 
+## 021요약_남여학생수.csv
+
+student_sex_num_raw <- readr::read_csv("inst/extdata/021요약_남여학생수.csv")
+
+student_sex_num <- student_sex_num_raw %>%
+    set_names(c("성별", "5-1반", "5-2반"))
+
+## 022요약_초등학생희망직업.csv
+
+elementary_hope_job_raw <- readr::read_csv("inst/extdata/022요약_초등학생희망직업.csv")
+
+elementary_hope_job <- elementary_hope_job_raw %>%
+    set_names(c("직업", "응답자수"))
+
+## 023요약_2015년남녀별인구.csv
+
+population_gender_2015_raw <- readr::read_csv("inst/extdata/023요약_2015년남녀별인구.csv")
+
+population_gender_2015 <- population_gender_2015_raw %>%
+    set_names(c("연령구간", "2015남자", "2015여자"))
+
+## 023요약_2015년시도별인구.csv
+
+population_city_2015_raw <- readr::read_csv("inst/extdata/023요약_2015년시도별인구.csv")
+
+population_city_2015 <- population_city_2015_raw %>%
+    set_names(c("시도", "인구수", "남자", "여자"))
+
+## 024요약_계절별온도.csv
+
+season_temp_raw <- readr::read_csv("inst/extdata/024요약_계절별온도.csv")
+
+season_temp <- season_temp_raw %>%
+    set_names(c("연도", "봄", "여름", "가을", "겨울", "연평균"))
+
 ## 025원시_성별.csv
 
 gender_raw <- readr::read_csv("inst/extdata/025원시_성별.csv")
 
 gender <- gender_raw %>%
     set_names("성별")
+
+## 025원시_수학선호도조사.csv
+
+math_preference_raw <- readr::read_csv("inst/extdata/025원시_수학선호도조사.csv")
+
+math_preference <- math_preference_raw %>%
+    set_names(c("성별", "수학선호"))
+
+## 026원시_성별좋아하는야채.csv
+
+favorite_vegetables_raw <- readr::read_csv("inst/extdata/026원시_성별좋아하는야채.csv")
+
+favorite_vegetables <- favorite_vegetables_raw %>%
+    set_names(c("성별", "좋은야채"))
+
+## 031연속_수달의길이.csv
+
+otter_length_raw <- readr::read_csv("inst/extdata/031연속_수달의길이.csv")
+
+otter_length <- otter_length_raw %>%
+    set_names("수달길이")
+
+## 032연속_선생님성별나이.csv
+
+teacher_sex_age_raw <- readr::read_csv("inst/extdata/032연속_선생님성별나이.csv")
+
+teacher_sex_age <- teacher_sex_age_raw %>%
+    set_names(c("성별", "나이"))
+
+## 033연속_칫솔질방법과구강청결도.csv
+
+brushing_mouth_clean_raw <- readr::read_csv("inst/extdata/033연속_칫솔질방법과구강청결도.csv")
+
+brushing_mouth_clean <- brushing_mouth_clean_raw %>%
+    set_names(c("칫솔질방법", "구강청결도"))
+
+## 034연속_핫도그영양평가.csv
+
+hotdog_raw <- readr::read_csv("inst/extdata/034연속_핫도그영양평가.csv")
+
+hotdog <- hotdog_raw %>%
+    set_names(c("핫도그종류", "칼로리"))
+
+## 035연속_성별신장체중.csv
+
+gender_height_weight_raw <- readr::read_csv("inst/extdata/035연속_성별신장체중.csv")
+
+gender_height_weight <- gender_height_weight_raw %>%
+    set_names(c("성별", "신장", "체중"))
+
+## 036연속_나이월수입조사.csv
+
+age_monthly_income_raw <- readr::read_csv("inst/extdata/036연속_나이월수입조사.csv")
+
+age_monthly_income <- age_monthly_income_raw %>%
+    set_names(c("성별", "나이", "월수입"))
 
 ## 초등과학3-2그림자길이(136쪽).csv
 
@@ -497,5 +588,18 @@ usethis::use_data(kicks_num, overwrite = TRUE)
 usethis::use_data(jinwook_unit_score, overwrite = TRUE)
 usethis::use_data(students_math_score, overwrite = TRUE)
 
+usethis::use_data(student_sex_num, overwrite = TRUE)
+usethis::use_data(elementary_hope_job, overwrite = TRUE)
+usethis::use_data(population_gender_2015, overwrite = TRUE)
+usethis::use_data(population_city_2015, overwrite = TRUE)
+usethis::use_data(season_temp, overwrite = TRUE)
 usethis::use_data(gender, overwrite = TRUE)
+usethis::use_data(math_preference, overwrite = TRUE)
+usethis::use_data(favorite_vegetables, overwrite = TRUE)
+usethis::use_data(otter_length, overwrite = TRUE)
+usethis::use_data(teacher_sex_age, overwrite = TRUE)
+usethis::use_data(brushing_mouth_clean, overwrite = TRUE)
+usethis::use_data(hotdog, overwrite = TRUE)
+usethis::use_data(gender_height_weight, overwrite = TRUE)
+usethis::use_data(age_monthly_income, overwrite = TRUE)
 
