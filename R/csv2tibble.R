@@ -2,6 +2,7 @@
 
 library(dplyr)
 
+
 csv_filenames <- fs::dir_ls(path = "inst/extdata/", glob = "*.csv")
 
 openstat_raw <- purrr::map(csv_filenames, readr::read_csv)

@@ -4,24 +4,21 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of statdata is to consolidate educational datasets for mathematics and statistics. The basic workflow is as follows;
-
-![](man/figures/workflow.png)
+The goal of `statdata` is to consolidate educational datasets for STEM. 
+This package contains the datasets shown in the Korean elementary, middle, and high schoool textbooks.
 
 ## Installation
 
-You can install the released version of statdata from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of `statdata` from [GitHub repository](https://github.com/tidyverse-korea/statdata) with:
 
 ``` r
-install.packages("statdata")
+devtools::install_github("tidyverse-korea/statdata")
 ```
 
-## Example
+## Workflow
 
-This is a basic example which shows you how to solve a common problem:
+This package ingests `.csv` files in order to make them available with minimum efforts.
+The basic workflow to turn `.csv` files into the package datasets is as follows;
 
-``` r
-library(statdata)
-## basic example code
-```
+![](man/figures/workflow.png)
 

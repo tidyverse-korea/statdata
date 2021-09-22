@@ -1,0 +1,64 @@
+---
+title: "Univariate Variable"
+subtitle: "Continous Variable"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{univariate-continuous}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Setup
+
+Type `library(statdata)` and then, datasets in the `statdata` package are avaiable.
+
+```{r setup}
+library(tidyverse)
+library(statdata)
+```
+
+# Load Sample Dataset
+
+`kicks_num` dataset contains number of success in the traditional Korean game, `Jegichagi`.
+
+
+```{r kick-num}
+data("kicks_num")
+kicks_num
+```
+
+# Basic Analysis
+
+[`skimr`](https://cran.r-project.org/web/packages/skimr/) package contains `skim()` function, which is an improved version of `summary` function. This one line command spits out all the descriptive statstics needed to understand the continuous variable.
+
+```{r basic-analysis}
+skimr::skim(kicks_num)
+```
+
+
+# Visualization
+
+We can visualize the univariate continouse variable with histogram or stem-and-leaf plot.
+There are various ways to visualize histogram, but the simplest way is to use `hist()`.
+
+```{r basic-visualization}
+kicks_num <- kicks_num %>% 
+  set_names('count')
+
+hist(kicks_num$count)
+```
+
+The stem-and-leaf plot is also possible.
+
+```{r basic-visualization-stem}
+stem(kicks_num$count)
+```

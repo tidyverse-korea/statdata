@@ -18,32 +18,25 @@ knitr::opts_chunk$set(
 
 # Setup
 
+Once the package has been installed, simply type `library(statdata)` as ususal.
+
 ```{r setup}
-library(statdata)
 # library(tidyverse)
+library(statdata)
 ```
 
-# Load Data
+# Data Dictionary
 
-```{r load-dataset}
-# statdata::openstat_tbl
-openstat_tbl
-```
+You can find the data dictionary on the [`statdata`](https://tidyverse-korea.github.io/statdata/reference/index.html) website.
 
-# Hello World
 
-```{r how-to-use-it}
+# Basic Usage
 
-# get_data <- function(pattern = "") {
-#     csv_data <- openstat_tbl %>%
-#         dplyr::filter(stringr::str_detect(name, pattern)) %>%
-#         dplyr::pull(content) %>%
-#         .[[1]]
-# 
-#     return(csv_data)
-# }
-# 
-# get_data("")
+This package contains the simple, but valuable datasets to understand basic data science concepts.
+While looking into datasets, mostly dataframe (aka, tibble), you can apply statistical skills which you have learned.
 
+```{r data-dictionary}
+data("CO2_emissions")
+CO2_emissions
 ```
 
