@@ -380,7 +380,7 @@ usethis::use_data(agro_fishery_in_out, overwrite = TRUE)
 usethis::use_data(shadow_length, overwrite = TRUE)
 usethis::use_data(sea_pollution, overwrite = TRUE)
 usethis::use_data(planet_radius, overwrite = TRUE)
-usethis::use_data(gender, overwrite = TRUE)
+
 usethis::use_data(distance_time_graph, overwrite = TRUE)
 usethis::use_data(transportation, overwrite = TRUE)
 usethis::use_data(running_record, overwrite = TRUE)

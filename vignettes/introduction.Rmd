@@ -34,16 +34,16 @@ openstat_tbl
 
 ```{r how-to-use-it}
 
-get_data <- function(pattern = "그림자") {
-    csv_data <- openstat_tbl %>%
-        dplyr::filter(stringr::str_detect(name, pattern)) %>%
-        dplyr::pull(content) %>%
-        .[[1]]
-
-    return(csv_data)
-}
-
-get_data("행성")
+# get_data <- function(pattern = "") {
+#     csv_data <- openstat_tbl %>%
+#         dplyr::filter(stringr::str_detect(name, pattern)) %>%
+#         dplyr::pull(content) %>%
+#         .[[1]]
+# 
+#     return(csv_data)
+# }
+# 
+# get_data("")
 
 ```
 
