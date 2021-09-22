@@ -8,6 +8,13 @@
 
 <title>소스 데이터 파일 가져오기 — get_rawdata • statdata</title>
 
+<!-- favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png" />
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -42,6 +49,7 @@
 <meta property="og:title" content="소스 데이터 파일 가져오기 — get_rawdata" />
 <meta property="og:description" content="초중등 통계 데이터셋을 만든 데이터 파일을 가져온다.
 메뉴에서 해당 파일 이름을 선택하면, 지정한 경로에 파일이 복사된다." />
+<meta property="og:image" content="/logo.png" />
 
 
 
@@ -141,7 +149,7 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>{</span>
-<span class='co'># 현재 작업 경로에 데이터 파일을 복사한다.</span>
+<span class='co'># `inst/extdata` 디렉토리 경로에 데이터 파일을 복사한다.</span>
 <span class='fu'>get_rawdata</span><span class='op'>(</span><span class='op'>)</span>
 
 <span class='co'># c:/temp에 선택한 데이터 파일을 복사한다.</span>
