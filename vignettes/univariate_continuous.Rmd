@@ -1,6 +1,5 @@
 ---
-title: "Univariate Variable"
-subtitle: "Continous Variable"
+title: "Univariate Continous Variable"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{univariate-continuous}
@@ -33,6 +32,9 @@ library(statdata)
 
 ```{r kick-num}
 data("kicks_num")
+kicks_num <- kicks_num %>% 
+  set_names('count')
+
 kicks_num
 ```
 
@@ -51,9 +53,6 @@ We can visualize the univariate continouse variable with histogram or stem-and-l
 There are various ways to visualize histogram, but the simplest way is to use `hist()`.
 
 ```{r basic-visualization}
-kicks_num <- kicks_num %>% 
-  set_names('count')
-
 hist(kicks_num$count)
 ```
 

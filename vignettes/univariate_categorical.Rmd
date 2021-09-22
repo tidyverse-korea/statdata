@@ -1,9 +1,8 @@
 ---
-title: "Univariate Variable"
-subtitle: "Continous Variable"
+title: "Univariate Categorical Variable"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{univariate-continuous}
+  %\VignetteIndexEntry{univariate-categorical}
   %\VignetteEncoding{UTF-8}
   %\VignetteEngine{knitr::rmarkdown}
 editor_options: 
@@ -28,37 +27,50 @@ library(statdata)
 
 # Load Sample Dataset
 
-`kicks_num` dataset contains number of success in the traditional Korean game, `Jegichagi`.
+`gender` dataset contains male and female row-by-row values.
 
 
-```{r kick-num}
-data("kicks_num")
-kicks_num
+```{r gender}
+data("gender")
+gender <- gender %>% 
+  set_names("gender")
+
+gender
 ```
 
 # Basic Analysis
 
-[`skimr`](https://cran.r-project.org/web/packages/skimr/) package contains `skim()` function, which is an improved version of `summary` function. This one line command spits out all the descriptive statstics needed to understand the continuous variable.
+The univariate categorical variable can be summarized through counting.
 
 ```{r basic-analysis}
-skimr::skim(kicks_num)
+
+gender %>%
+  count(gender)
 ```
 
 
 # Visualization
 
-We can visualize the univariate continouse variable with histogram or stem-and-leaf plot.
-There are various ways to visualize histogram, but the simplest way is to use `hist()`.
+We can visualize the univariate categorical variable with barplot or pie chart.
 
 ```{r basic-visualization}
-kicks_num <- kicks_num %>% 
-  set_names('count')
+par(family = "NanumGothic")
 
-hist(kicks_num$count)
+gender_count <- gender %>%
+  count(gender)
+
+barplot(n ~ gender, data = gender_count)
 ```
 
-The stem-and-leaf plot is also possible.
+The pie chart plot is also possible.
 
-```{r basic-visualization-stem}
-stem(kicks_num$count)
+```{r basic-visualization-pie}
+par(family = "NanumGothic")
+
+gender_vector <- gender_count %>% 
+  pull(n)
+
+names(gender_vector) <- gender_count$gender
+
+pie(gender_vector)
 ```
