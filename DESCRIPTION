@@ -4,7 +4,8 @@ Title: Datasets for the elementary, middle, and high school in the Korean textbo
 Version: 0.2.0
 Authors@R: 
     c(person("Kwangchun", "Lee", email="kwangchun.lee.7@gmail.com", role = c("aut", "cre")),
-      person("Choonghyun", "Rhy", email="choonghyun.ryu@gmail.com", role = c("aut")))
+      person("Choonghyun", "Rhy", email="choonghyun.ryu@gmail.com", role = c("aut")),
+      person("Hwayoung", "Yoon", email="ghkdud204@gmail.com", role = c("aut")))
 Maintainer: Kwangchun Lee <kwangchun.lee.7@gmail.com>
 Description: We have collected the datasets necessary for basic statistical education essential for cultivating data literacy.
      Datasets mentioned in elementary, middle, and high school textbooks are consolidated in this package.
