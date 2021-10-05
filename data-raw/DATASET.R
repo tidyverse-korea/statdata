@@ -1,5 +1,9 @@
 # 0. 환경설정 -----
-library(tidyverse)
+library(magrittr)
+library(readr)
+library(fs)
+library(purrr)
+
 # fs::dir_create("inst/extdata")
 
 # 0. 전체 데이터 -----

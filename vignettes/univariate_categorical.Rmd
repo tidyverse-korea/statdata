@@ -21,7 +21,12 @@ knitr::opts_chunk$set(
 Type `library(statdata)` and then, datasets in the `statdata` package are avaiable.
 
 ```{r setup}
-library(tidyverse)
+library(dplyr)
+library(readr)
+library(magrittr)
+library(purrr)
+library(fs)
+library(skimr)
 library(statdata)
 ```
 

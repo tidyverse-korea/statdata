@@ -1,19 +1,26 @@
 Package: statdata
 Type: Package
-Title: 초중등 통계교육에 사용되는 데이터셋 모음 
-Version: 0.1.0
+Title: Datasets for the elementary, middle, and high school in the Korean textbooks.
+Version: 0.2.0
 Authors@R: 
-    c(person("광춘", "이", email="kwangchun.lee.7@gmail.com", role = c("aut", "cre")),
-      person("충현", "유", email="choonghyun.ryu@gmail.com", role = c("aut")))
-Maintainer: 이광춘 <kwangchun.lee.7@gmail.com>
-Description: 데이터 리터러시(Data Literacy) 함양을 위해 필수적인 통계 기본 교육에 필요한 데이터셋을 모았습니다.
-    초중등 교과서에 언급된 데이터셋을 한곳에 모아 두었습니다.
+    c(person("Kwangchun", "Lee", email="kwangchun.lee.7@gmail.com", role = c("aut", "cre")),
+      person("Choonghyun", "Rhy", email="choonghyun.ryu@gmail.com", role = c("aut")))
+Maintainer: Kwangchun Lee <kwangchun.lee.7@gmail.com>
+Description: We have collected the datasets necessary for basic statistical education essential for cultivating data literacy.
+     Datasets mentioned in elementary, middle, and high school textbooks are consolidated in this package.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
 Depends: 
     R (>= 2.10)
+Imports:
+    dplyr,
+    fs,
+    readr,
+    magrittr,
+    purrr,
+    skimr
 Suggests: 
     rmarkdown,
     knitr
