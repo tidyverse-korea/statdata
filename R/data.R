@@ -28,6 +28,252 @@ NULL
 "openstat_tbl"
 
 
+#' student_sex_num : 요약
+#'
+#' 남,여학생 수 요약 데이터
+#'
+#'
+#' @aliases 남여학생 수
+#' @docType data
+#' @format 변수 3개와 2행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{성별}}{character 남, 여 두 값중 하나를 갖는 성별}
+#'   \item{\code{5-1반}}{double 성별에 따른 5학년 1반 학생 수, 단위: 명}
+#'   \item{\code{5-2반}}{double 성별에 따른 5학년 2반 학생 수, 단위: 명}
+#'}
+#' @details  초등 요약 성별에 따른 5학년 1반과 2반의 학생 수 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"student_sex_num"
+
+#' elementary_hope_job : 요약
+#'
+#' 초등학생 희망직업 요약 데이터
+#'
+#'
+#' @aliases 초등학생 희망 직업
+#' @docType data
+#' @format 변수 2개와 10행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{성별}}{character 초등학생이 희망하는 직업의 이름}
+#'   \item{\code{응답자수}}{double 각 직업을 희망하는 초등학생의 수, 단위: 명}
+#'}
+#' @details  초등 요약 초등학생이 희망하는 직업과 희망하는 학생의 수 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"elementary_hope_job"
+
+#' population_gender_2015 : 요약
+#'
+#' 2015년 남녀별 인구 요약 데이터
+#'
+#'
+#' @aliases 2015년 남녀별 인구
+#' @docType data
+#' @format 변수 3개와 18행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{연령구간}}{character 5세 단위로 연령을 나눈 구간}
+#'   \item{\code{2015남자}}{double 2015년 조사된 연령구간별 남성의 수, 단위: 만명}
+#'   \item{\code{2015여자}}{double 2015년 조사된 연령구간별 여성의 수, 단위: 만명}
+#'}
+#' @details  초등 요약 2015년 남녀별 인구의 수 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"population_gender_2015"
+
+#' population_city_2015 : 요약
+#'
+#' 2015년 시도별 인구 요약 데이터
+#'
+#'
+#' @aliases 2015년 시도별 인구
+#' @docType data
+#' @format 변수 4개와 17행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{시도}}{character 전국 17개 시도의 이름}
+#'   \item{\code{인구수}}{double 2015년 조사된 시도별 인구의 수, 단위: 만명}
+#'   \item{\code{남자}}{double 2015년 조사된 시도별 남성의 수, 단위: 만명}
+#'   \item{\code{여자}}{double 2015년 조사된 시도별 여성의 수, 단위: 만명}
+#'}
+#' @details  초등 요약 2015년 시도별 전체 인구와 성별로 나뉜 인구의 수 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"population_city_2015"
+
+#' season_temp : 요약
+#'
+#' 계절별 온도 요약 데이터
+#'
+#'
+#' @aliases 계절별 온도
+#' @docType data
+#' @format 변수 6개와 44행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{연도}}{double 1973년부터 2016년까지 매년}
+#'   \item{\code{봄}}{double 봄 평균 온도, 단위: 섭씨}
+#'   \item{\code{여름}}{double 여름 평균 온도, 단위: 섭씨}
+#'   \item{\code{가을}}{double 가을 평균 온도, 단위: 섭씨}
+#'   \item{\code{겨울}}{double 겨울 평균 온도, 단위: 섭씨}
+#'   \item{\code{연평균}}{double 1년 동안의 평균 온도, 단위: 섭씨}
+#'}
+#' @details  초등 요약 1973년부터 2016년까지 매년 측정된 계절별 온도 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"season_temp"
+
+#' gender : 원시
+#'
+#' 초등 남성과 여성 원시 데이터
+#'
+#'
+#' @aliases 성별
+#' @docType data
+#' @format 변수 1개와 10행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{성별}}{character 남, 여 두 값중 하나를 갖는 성별}
+#'}
+#' @details  초등 원시 성별 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"gender"
+
+#' math_preference : 원시
+#'
+#' 수학 선호도 조사 원시 데이터
+#'
+#'
+#' @aliases 수학 선호도 조사
+#' @docType data
+#' @format 변수 2개와 10행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{성별}}{double 남성은 1, 여성은 2의 값을 갖는 성별}
+#'   \item{\code{수학선호}}{double 1에서 3까지의 수치를 가지는 수학을 선호하는 정도}
+#'}
+#' @details  초등 원시 수학을 선호하는 정도에 대한 조사 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"math_preference"
+
+#' favorite_vegetables : 원시
+#'
+#' 성별 좋아하는 야채 원시 데이터
+#'
+#'
+#' @aliases 성별 좋아하는 야채
+#' @docType data
+#' @format 변수 2개와 10행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{성별}}{double 남성은 1, 여성은 2의 값을 갖는 성별}
+#'   \item{\code{좋은야채}}{double 네 가지로 나뉘는 좋아하는 야채의 종류}
+#'}
+#' @details  초등 원시 성별과 좋아하는 야채 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"favorite_vegetables"
+
+#' otter_length : 연속
+#'
+#' 수달의 길이 연속 데이터
+#'
+#'
+#' @aliases 수달의 길이
+#' @docType data
+#' @format 변수 1개와 30행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{수달길이}}{double 수달의 길이, 단위: cm}
+#'}
+#' @details  초등 연속 수달의 길이 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"otter_length"
+
+#' teacher_sex_age : 연속
+#'
+#' 선생님 성별 나이 연속 데이터
+#'
+#'
+#' @aliases 선생님 성별 나이
+#' @docType data
+#' @format 변수 2개와 30행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{성별}}{double 남성은 1, 여성은 2의 값을 갖는 성별}
+#'   \item{\code{나이}}{double 선생님의 나이, 단위: 세}
+#'}
+#' @details  초등 연속 선생님의 성별과 나이 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"teacher_sex_age"
+
+#' brushing_mouth_clean : 연속
+#'
+#' 칫솔질 방법과 구강청결도 연속 데이터
+#'
+#'
+#' @aliases 칫솔질 방법과 구강청결도
+#' @docType data
+#' @format 변수 2개와 15행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{칫솔질방법}}{double 두 가지로 나뉘는 칫솔질을 하는 방법}
+#'   \item{\code{구강청결도}}{double 0.11에서 0.55 사이의 값을 갖는 구강청결의 정도}
+#'}
+#' @details  초등 연속 칫솔질 방법과 구강청결도 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"brushing_mouth_clean"
+
+#' hotdog : 연속
+#'
+#' 핫도그 영양평가 연속 데이터
+#'
+#'
+#' @aliases 핫도그 영양평가
+#' @docType data
+#' @format 변수 2개와 54행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{핫도그종류}}{double 세 가지로 나뉘는 핫도그의 종류}
+#'   \item{\code{칼로리}}{double 핫도그의 칼로리, 단위: kcal}
+#'}
+#' @details  초등 연속 핫도그에 대한 영양평가 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"hotdog"
+
+#' gender_height_weight : 연속
+#'
+#' 성별 신장 체중 연속 데이터
+#'
+#'
+#' @aliases 성별 신장 체중
+#' @docType data
+#' @format 변수 3개와 10행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{성별}}{double 남성은 1, 여성은 2의 값을 갖는 성별}
+#'   \item{\code{신장}}{double 145와 161 사이의 값을 갖는 신장}
+#'   \item{\code{체중}}{double 44와 56 사이의 값을 갖는 체중}
+#'}
+#' @details  초등 연속 성별, 신장, 체중에 대해 조사한 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"gender_height_weight"
+
+#' age_monthly_income : 연속
+#'
+#' 나이 월수입 조사 연속 데이터
+#'
+#'
+#' @aliases 나이 월수입 조사
+#' @docType data
+#' @format 변수 3개와 40행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{성별}}{double 남성은 1, 여성은 2의 값을 갖는 성별}
+#'   \item{\code{나이}}{double 20과 59 사이의 값을 갖는 나이, 단위: 세}
+#'   \item{\code{월수입}}{double 50과 349 사이의 값을 갖는 월수입, 단위: 만원}
+#'}
+#' @details  초등 연속 성별과 나이, 월수입을 조사한 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"age_monthly_income"
+
 #' shadow_length : 초등과학 3-2
 #'
 #' 초등과학 3-2에 수록된 태양 각도와 그림자 길이에 대한 데이터다.
@@ -79,22 +325,6 @@ NULL
 #' @source \url{http://estat.me/estat/eStat/}
 #' @keywords datasets
 "planet_radius"
-
-#' gender : 원시
-#'
-#' 초등 남성과 여성 원시 데이터
-#'
-#'
-#' @aliases 성별
-#' @docType data
-#' @format 변수 1개와 10행을 갖는 티블 데이터프레임:
-#' \describe{
-#'   \item{\code{성별}}{character 남, 여 두 값중 하나를 갖는 성별}
-#'}
-#' @details  초등 원시 성별 데이터
-#' @source \url{http://estat.me/estat/eStat/}
-#' @keywords datasets
-"gender"
 
 #' distance_time_graph : 초등과학 5-2
 #'
@@ -335,7 +565,7 @@ NULL
 #'
 #' @aliases 지면과 수면의 온도 차이
 #' @docType data
-#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
+#' @format 변수 3개와 6행을 갖는 티블 데이터프레임:
 #' \describe{
 #'   \item{\code{시각}}{double 08시부터 다음날 07시까지 매시 정각}
 #'   \item{\code{지면온도}}{double 매시 정각 지면의 온도, 단위: 섭씨}
@@ -902,3 +1132,164 @@ NULL
 #' @source \url{http://estat.me/estat/eStat/}
 #' @keywords datasets
 "students_math_score"
+
+#' parent_income_child_edu : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 부모의 월평균 소득과 자녀의 진학관계 데이터
+#'
+#'
+#' @format 변수 2개와 4행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{구분}}{character 미진학, 전문대학, 지방 4년제, 서울 4년제로 구분되는 진학 정도}
+#'   \item{\code{월평균소득}}{double 진학정도에 따른 부모들의 월평균 소득, 단위: 만원}
+#'}
+#' @aliases 부모의 월평균 소득과 자녀의 진학관계
+#' @docType data
+#' @details  중등사회 1 교과서에 수록된 미진학, 전문대학, 지방 4년제, 서울 4년제로 구분되는 자녀의 진학정도에 따른 부모들의 월평균 소득 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"parent_income_child_edu"
+
+#' social_discrimination : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 사회적 차별 데이터
+#'
+#'
+#' @format 변수 2개와 6행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{구분}}{character 학력, 나이, 성 등 사회적 차별의 원인}
+#'   \item{\code{비율}}{double 각 원인별로 사회적 차별이 일어나는 비율, 단위: %}
+#'}
+#' @aliases 사회적 차별
+#' @docType data
+#' @details  중등사회 1 교과서에 수록된 학력, 나이, 성 등 사회적 차별의 원인별로 사회적 차별이 일어나는 비율 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"social_discrimination"
+
+#' seoul_london_monthly_temp : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 서울과 런던의 월평균 기온 비교 데이터
+#'
+#'
+#' @format 변수 3개와 12행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{월}}{character 1월부터 12월까지 매월}
+#'   \item{\code{서울기온}}{double 한 달동안 서울 기온의 평균, 단위: 섭씨}
+#'   \item{\code{런던기온}}{double 한 달동안 런던 기온의 평균, 단위: 섭씨}
+#'}
+#' @aliases 서울과 런던의 월평균 기온 비교
+#' @docType data
+#' @details  중등사회 1 교과서에 수록된 1월부터 12월까지 매달 서울과 런던의 평균 기온 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"seoul_london_monthly_temp"
+
+#' world_10_population : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 세계 10대 인구 국가 데이터
+#'
+#'
+#' @format 변수 2개와 10행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{국가}}{character 세계에서 인구수가 가장 많은 10개 국가의 이름}
+#'   \item{\code{인구수}}{double 국가별 인구의 수, 단위: 억명}
+#'}
+#' @aliases 세계 10대 인구 국가
+#' @docType data
+#' @details  중등사회 1 교과서에 수록된 세계에서 인구수가 가장 많은 10개 국가의 국가별 인구의 수 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"world_10_population"
+
+#' world_up_65_population : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 세계의 65세 이상 예상 인구 비율 데이터
+#'
+#'
+#' @format 변수 4개와 7행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{구분}}{character 세계와 6개 대륙의 이름}
+#'   \item{\code{2010년}}{double 2010년 대륙별로 예상되는 65세 이상 인구의 비율, 단위: %}
+#'   \item{\code{2025년}}{double 2025년 대륙별로 예상되는 65세 이상 인구의 비율, 단위: %}
+#'   \item{\code{2050년}}{double 2050년 대륙별로 예상되는 65세 이상 인구의 비율, 단위: %}
+#'}
+#' @aliases 세계의 65세 이상 예상 인구 비율
+#' @docType data
+#' @details  중등사회 1 교과서에 수록된 세계와 6개 대륙별로 예상되는 65세 이상 인구의 비율 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"world_up_65_population"
+
+#' metropolitan_concentration : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 수도권 집중도 데이터
+#'
+#'
+#' @format 변수 3개와 6행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{구분}}{character 면적, 인구, 지역생산 등 수도권과 비수도권의 정도를 비교하는 지표의 이름}
+#'   \item{\code{수도권}}{double 지표별로 수도권이 해당하는 정도, 단위: 구분에 따라 다름}
+#'   \item{\code{비수도권}}{double 지표별로 수도권이 해당하는 정도, 단위: 구분에 따라 다름}
+#'}
+#' @aliases 수도권 집중도
+#' @docType data
+#' @details  중등사회 1 교과서에 수록된 면적, 인구, 지역생산 등 수도권과 비수도권의 정도를 비교하는 지표를 통해 파악할 수 있는 수도권 집중 정도 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"metropolitan_concentration"
+
+#' estimated_population_sex_age : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 우리나라 1960년 2020년 성별 연령별 예상 인구 비율 데이터
+#'
+#'
+#' @format 변수 5개와 9행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{연령}}{character 10세 미만부터 80세 이상까지 10세를 주기로 나눈 연령의 정도}
+#'   \item{\code{1960남}}{double 1960년 조사한 남성의 연령별 비율, 단위: %}
+#'   \item{\code{1960여}}{double 1960년 조사한 여성의 연령별 비율, 단위: %}
+#'   \item{\code{2020남}}{double 2020년 남성의 연령별 비율을 예상한 값, 단위: %}
+#'   \item{\code{2020여}}{double 2020년 여성의 연령별 비율을 예상한 값, 단위: %}
+#'}
+#' @aliases 우리나라 1960년 2020년 성별 연령별 예상 인구 비율
+#' @docType data
+#' @details  중등사회 1 교과서에 수록된 우리나라의 1960년 조사한 연령별 남성과 여성의 비율과 2020년의 연령별 남성과 여성의 비율을 예상한 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"estimated_population_sex_age"
+
+#' fertility_rate_sum_newborn_num : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 우리나라 연도별 합계 출산율과 출생아 수 데이터
+#'
+#'
+#' @format 변수 3개와 9행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{년도}}{double 1970년부터 2009년까지 5년 주기, 단위: 년}
+#'   \item{\code{출생아수}}{double 연도별 출생아의 수, 단위: 만명}
+#'   \item{\code{합계출산율}}{double 연도별 출산율의 합계, 단위: 명}
+#'}
+#' @aliases 우리나라 연도별 합계 출산율과 출생아 수
+#' @docType data
+#' @details  중등사회 1 교과서에 수록된 1970년부터 2009년까지 5년 주기로 조사된 연도별 출생아수와 합계 출산율 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"fertility_rate_sum_newborn_num"
+
+#' sound_imaging_service_export : 중등사회 1
+#'
+#' 중등사회 1 교과서에 수록된 음향 영상 서비스의 수출액 변화 데이터
+#'
+#'
+#' @format 변수 2개와 5행을 갖는 티블 데이터프레임:
+#' \describe{
+#'   \item{\code{년도}}{double 2003년부터 2007년까지 매년, 단위: 년}
+#'   \item{\code{수출액}}{double 음향 영상 서비스를 수출한 금액, 단위: 만$}
+#'}
+#' @aliases 음향 영상 서비스의 수출액 변화
+#' @docType data
+#' @details  중등사회 1 교과서에 수록된 2003년부터 2007년까지 매년 음향 영상 서비스를 수출한 금액 데이터
+#' @source \url{http://estat.me/estat/eStat/}
+#' @keywords datasets
+"sound_imaging_service_export"
